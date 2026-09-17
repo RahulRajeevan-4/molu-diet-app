@@ -1,0 +1,1743 @@
+[
+  {
+    "common_name": "Apple",
+    "scientific_name": "Malus domestica",
+    "form": "raw, with skin",
+    "region_note": "Globally common",
+    "nutrients_per_100g": {
+      "energy_kcal": 52,
+      "water_g": 85.6,
+      "carbohydrate_g": 13.8,
+      "sugars_g": 10.4,
+      "fiber_g": 2.4,
+      "protein_g": 0.3,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 4.6,
+      "potassium_mg": 107
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium",
+      "small amounts of vitamin K"
+    ],
+    "key_phytochemicals": [
+      "quercetin",
+      "catechins",
+      "chlorogenic acid",
+      "anthocyanins in red-skinned varieties"
+    ],
+    "glycemic_index_typical": 36,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Whole fruit is preferable to juice for fibre and satiety.",
+      "Skin contributes fibre and polyphenols."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Banana",
+    "scientific_name": "Musa spp.",
+    "form": "raw, ripe",
+    "region_note": "Globally common; many cultivars",
+    "nutrients_per_100g": {
+      "energy_kcal": 89,
+      "water_g": 74.9,
+      "carbohydrate_g": 22.8,
+      "sugars_g": 12.2,
+      "fiber_g": 2.6,
+      "protein_g": 1.1,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 8.7,
+      "potassium_mg": 358
+    },
+    "key_micronutrients": [
+      "potassium",
+      "vitamin B6",
+      "vitamin C",
+      "magnesium"
+    ],
+    "key_phytochemicals": [
+      "dopamine-related phenolics",
+      "carotenoids"
+    ],
+    "glycemic_index_typical": 51,
+    "glycemic_category": "low to medium depending on ripeness",
+    "clinical_notes": [
+      "Riper bananas generally contain more readily available sugars.",
+      "Less-ripe bananas contain more resistant starch."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017 for Indian cultivar context"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Orange",
+    "scientific_name": "Citrus sinensis",
+    "form": "raw",
+    "region_note": "Globally common citrus",
+    "nutrients_per_100g": {
+      "energy_kcal": 47,
+      "water_g": 86.8,
+      "carbohydrate_g": 11.8,
+      "sugars_g": 9.4,
+      "fiber_g": 2.4,
+      "protein_g": 0.9,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 53.2,
+      "potassium_mg": 181
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "folate",
+      "potassium",
+      "thiamine"
+    ],
+    "key_phytochemicals": [
+      "hesperidin",
+      "naringenin",
+      "carotenoids"
+    ],
+    "glycemic_index_typical": 43,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Whole orange retains more fibre than juice.",
+      "Vitamin C can enhance non-heme iron absorption when eaten with plant iron sources."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Mango",
+    "scientific_name": "Mangifera indica",
+    "form": "raw, ripe",
+    "region_note": "Very common in South Asia and globally",
+    "nutrients_per_100g": {
+      "energy_kcal": 60,
+      "water_g": 83.5,
+      "carbohydrate_g": 15.0,
+      "sugars_g": 13.7,
+      "fiber_g": 1.6,
+      "protein_g": 0.8,
+      "fat_g": 0.4,
+      "vitamin_c_mg": 36.4,
+      "potassium_mg": 168
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin A carotenoids",
+      "folate",
+      "vitamin E"
+    ],
+    "key_phytochemicals": [
+      "mangiferin",
+      "beta-carotene",
+      "quercetin",
+      "gallotannins"
+    ],
+    "glycemic_index_typical": 51,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Carbohydrate load rises quickly with large portions.",
+      "Carotenoid content varies markedly by cultivar and ripeness."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017 for Indian context"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Grapes",
+    "scientific_name": "Vitis vinifera",
+    "form": "raw",
+    "region_note": "Globally common",
+    "nutrients_per_100g": {
+      "energy_kcal": 69,
+      "water_g": 80.5,
+      "carbohydrate_g": 18.1,
+      "sugars_g": 15.5,
+      "fiber_g": 0.9,
+      "protein_g": 0.7,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 3.2,
+      "potassium_mg": 191
+    },
+    "key_micronutrients": [
+      "potassium",
+      "vitamin K",
+      "small amounts of copper"
+    ],
+    "key_phytochemicals": [
+      "resveratrol",
+      "anthocyanins in dark grapes",
+      "flavanols"
+    ],
+    "glycemic_index_typical": 53,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Easy to overconsume because of small unit size.",
+      "Dark-skinned varieties generally provide more anthocyanins."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017 for Indian varieties"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "form": "raw",
+    "region_note": "Globally common",
+    "nutrients_per_100g": {
+      "energy_kcal": 30,
+      "water_g": 91.5,
+      "carbohydrate_g": 7.6,
+      "sugars_g": 6.2,
+      "fiber_g": 0.4,
+      "protein_g": 0.6,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 8.1,
+      "potassium_mg": 112
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin A carotenoids",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "lycopene",
+      "citrulline"
+    ],
+    "glycemic_index_typical": 72,
+    "glycemic_category": "high GI but low carbohydrate density",
+    "clinical_notes": [
+      "Despite a relatively high GI, typical portions often have a modest glycaemic load because the fruit is mostly water.",
+      "Useful for hydration but low in fibre."
+    ],
+    "source_basis": [
+      "USDA FoodData Central",
+      "ICMR-NIN IFCT 2017 for Indian samples"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Pineapple",
+    "scientific_name": "Ananas comosus",
+    "form": "raw",
+    "region_note": "Globally common tropical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 50,
+      "water_g": 86.0,
+      "carbohydrate_g": 13.1,
+      "sugars_g": 9.9,
+      "fiber_g": 1.4,
+      "protein_g": 0.5,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 47.8,
+      "potassium_mg": 109
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "manganese",
+      "small amounts of folate"
+    ],
+    "key_phytochemicals": [
+      "bromelain enzymes",
+      "phenolic acids"
+    ],
+    "glycemic_index_typical": 59,
+    "glycemic_category": "medium",
+    "clinical_notes": [
+      "Fresh pineapple contains bromelain; heat processing reduces enzyme activity.",
+      "Canned pineapple in syrup has more added sugar than fresh fruit."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Papaya",
+    "scientific_name": "Carica papaya",
+    "form": "raw, ripe",
+    "region_note": "Common tropical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 43,
+      "water_g": 88.1,
+      "carbohydrate_g": 10.8,
+      "sugars_g": 7.8,
+      "fiber_g": 1.7,
+      "protein_g": 0.5,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 60.9,
+      "potassium_mg": 182
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "folate",
+      "vitamin A carotenoids",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "beta-cryptoxanthin",
+      "lycopene",
+      "carotenoids"
+    ],
+    "glycemic_index_typical": 60,
+    "glycemic_category": "medium",
+    "clinical_notes": [
+      "Nutrient-dense for relatively few calories.",
+      "Ripe papaya differs considerably from unripe green papaya in carbohydrate profile and culinary use."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Guava",
+    "scientific_name": "Psidium guajava",
+    "form": "raw",
+    "region_note": "Very common in India and tropical regions",
+    "nutrients_per_100g": {
+      "energy_kcal": 68,
+      "water_g": 80.8,
+      "carbohydrate_g": 14.3,
+      "sugars_g": 8.9,
+      "fiber_g": 5.4,
+      "protein_g": 2.6,
+      "fat_g": 1.0,
+      "vitamin_c_mg": 228.3,
+      "potassium_mg": 417
+    },
+    "key_micronutrients": [
+      "very high vitamin C",
+      "potassium",
+      "folate",
+      "carotenoids"
+    ],
+    "key_phytochemicals": [
+      "lycopene in pink guava",
+      "quercetin",
+      "flavonoids"
+    ],
+    "glycemic_index_typical": 31,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "One of the most vitamin-C-rich commonly eaten fruits.",
+      "High fibre relative to many fruits."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Pomegranate",
+    "scientific_name": "Punica granatum",
+    "form": "raw arils",
+    "region_note": "Common in South Asia, Middle East and globally",
+    "nutrients_per_100g": {
+      "energy_kcal": 83,
+      "water_g": 77.9,
+      "carbohydrate_g": 18.7,
+      "sugars_g": 13.7,
+      "fiber_g": 4.0,
+      "protein_g": 1.7,
+      "fat_g": 1.2,
+      "vitamin_c_mg": 10.2,
+      "potassium_mg": 236
+    },
+    "key_micronutrients": [
+      "vitamin K",
+      "folate",
+      "potassium",
+      "vitamin C"
+    ],
+    "key_phytochemicals": [
+      "punicalagins",
+      "ellagic acid",
+      "anthocyanins"
+    ],
+    "glycemic_index_typical": 35,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Arils provide fibre that is largely lost in juice.",
+      "Polyphenol composition is one of its notable features."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Strawberry",
+    "scientific_name": "Fragaria × ananassa",
+    "form": "raw",
+    "region_note": "Globally common berry",
+    "nutrients_per_100g": {
+      "energy_kcal": 32,
+      "water_g": 90.9,
+      "carbohydrate_g": 7.7,
+      "sugars_g": 4.9,
+      "fiber_g": 2.0,
+      "protein_g": 0.7,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 58.8,
+      "potassium_mg": 153
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "folate",
+      "manganese"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "ellagic acid",
+      "flavonols"
+    ],
+    "glycemic_index_typical": 41,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Low energy density and relatively low sugar per 100 g.",
+      "Fresh and frozen unsweetened forms are nutritionally similar."
+    ],
+    "source_basis": [
+      "USDA FoodData Central",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Blueberry",
+    "scientific_name": "Vaccinium corymbosum / Vaccinium spp.",
+    "form": "raw",
+    "region_note": "Common berry in many countries",
+    "nutrients_per_100g": {
+      "energy_kcal": 57,
+      "water_g": 84.2,
+      "carbohydrate_g": 14.5,
+      "sugars_g": 10.0,
+      "fiber_g": 2.4,
+      "protein_g": 0.7,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 9.7,
+      "potassium_mg": 77
+    },
+    "key_micronutrients": [
+      "vitamin K",
+      "manganese",
+      "vitamin C"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "chlorogenic acid",
+      "flavonols"
+    ],
+    "glycemic_index_typical": 53,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Anthocyanins are concentrated in the pigmented skin.",
+      "Unsweetened frozen blueberries are a useful equivalent to fresh."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Raspberry",
+    "scientific_name": "Rubus idaeus",
+    "form": "raw",
+    "region_note": "Common berry",
+    "nutrients_per_100g": {
+      "energy_kcal": 52,
+      "water_g": 85.8,
+      "carbohydrate_g": 11.9,
+      "sugars_g": 4.4,
+      "fiber_g": 6.5,
+      "protein_g": 1.2,
+      "fat_g": 0.7,
+      "vitamin_c_mg": 26.2,
+      "potassium_mg": 151
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "manganese",
+      "vitamin K"
+    ],
+    "key_phytochemicals": [
+      "ellagitannins",
+      "anthocyanins",
+      "quercetin"
+    ],
+    "glycemic_index_typical": 32,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Very high fibre for a fresh fruit.",
+      "Low available carbohydrate relative to many sweeter fruits."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Blackberry",
+    "scientific_name": "Rubus fruticosus agg.",
+    "form": "raw",
+    "region_note": "Common berry",
+    "nutrients_per_100g": {
+      "energy_kcal": 43,
+      "water_g": 88.2,
+      "carbohydrate_g": 9.6,
+      "sugars_g": 4.9,
+      "fiber_g": 5.3,
+      "protein_g": 1.4,
+      "fat_g": 0.5,
+      "vitamin_c_mg": 21.0,
+      "potassium_mg": 162
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin K",
+      "manganese"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "ellagic acid",
+      "flavonols"
+    ],
+    "glycemic_index_typical": 25,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "High fibre and relatively low sugar.",
+      "Deep color reflects substantial anthocyanin content."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Kiwifruit",
+    "scientific_name": "Actinidia deliciosa",
+    "form": "raw, green",
+    "region_note": "Globally common",
+    "nutrients_per_100g": {
+      "energy_kcal": 61,
+      "water_g": 83.9,
+      "carbohydrate_g": 14.7,
+      "sugars_g": 9.0,
+      "fiber_g": 3.0,
+      "protein_g": 1.1,
+      "fat_g": 0.5,
+      "vitamin_c_mg": 92.7,
+      "potassium_mg": 312
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin K",
+      "vitamin E",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "carotenoids",
+      "polyphenols"
+    ],
+    "glycemic_index_typical": 50,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "High vitamin C density.",
+      "Contains actinidin, a proteolytic enzyme; kiwi allergy can occur in susceptible people."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Pear",
+    "scientific_name": "Pyrus communis",
+    "form": "raw",
+    "region_note": "Globally common",
+    "nutrients_per_100g": {
+      "energy_kcal": 57,
+      "water_g": 84.0,
+      "carbohydrate_g": 15.2,
+      "sugars_g": 9.8,
+      "fiber_g": 3.1,
+      "protein_g": 0.4,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 4.3,
+      "potassium_mg": 116
+    },
+    "key_micronutrients": [
+      "copper",
+      "vitamin C",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "chlorogenic acid",
+      "flavonoids",
+      "anthocyanins in red varieties"
+    ],
+    "glycemic_index_typical": 38,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Contains fructose and sorbitol; some people with IBS/FODMAP sensitivity may experience symptoms.",
+      "Skin contributes much of the fibre."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Peach",
+    "scientific_name": "Prunus persica",
+    "form": "raw",
+    "region_note": "Globally common stone fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 39,
+      "water_g": 88.9,
+      "carbohydrate_g": 9.5,
+      "sugars_g": 8.4,
+      "fiber_g": 1.5,
+      "protein_g": 0.9,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 6.6,
+      "potassium_mg": 190
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium",
+      "carotenoids"
+    ],
+    "key_phytochemicals": [
+      "chlorogenic acid",
+      "catechins",
+      "carotenoids"
+    ],
+    "glycemic_index_typical": 42,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Low energy density.",
+      "Canned peaches in syrup can have substantially more sugar."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Plum",
+    "scientific_name": "Prunus domestica",
+    "form": "raw",
+    "region_note": "Common stone fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 46,
+      "water_g": 87.2,
+      "carbohydrate_g": 11.4,
+      "sugars_g": 9.9,
+      "fiber_g": 1.4,
+      "protein_g": 0.7,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 9.5,
+      "potassium_mg": 157
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin K",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins in purple plums",
+      "chlorogenic acids"
+    ],
+    "glycemic_index_typical": 40,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Dried plums (prunes) are much more energy-dense and concentrated in sorbitol and fibre than fresh plums."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Apricot",
+    "scientific_name": "Prunus armeniaca",
+    "form": "raw",
+    "region_note": "Common stone fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 48,
+      "water_g": 86.4,
+      "carbohydrate_g": 11.1,
+      "sugars_g": 9.2,
+      "fiber_g": 2.0,
+      "protein_g": 1.4,
+      "fat_g": 0.4,
+      "vitamin_c_mg": 10.0,
+      "potassium_mg": 259
+    },
+    "key_micronutrients": [
+      "beta-carotene",
+      "vitamin C",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "carotenoids",
+      "chlorogenic acid"
+    ],
+    "glycemic_index_typical": 34,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Dried apricots are far more concentrated in carbohydrate, fibre and potassium per 100 g."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Sweet Cherry",
+    "scientific_name": "Prunus avium",
+    "form": "raw",
+    "region_note": "Common temperate fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 63,
+      "water_g": 82.3,
+      "carbohydrate_g": 16.0,
+      "sugars_g": 12.8,
+      "fiber_g": 2.1,
+      "protein_g": 1.1,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 7.0,
+      "potassium_mg": 222
+    },
+    "key_micronutrients": [
+      "potassium",
+      "vitamin C",
+      "copper"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "hydroxycinnamic acids"
+    ],
+    "glycemic_index_typical": 22,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Low GI despite natural sugar content.",
+      "Sorbitol content may matter in FODMAP-sensitive individuals."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Grapefruit",
+    "scientific_name": "Citrus × paradisi",
+    "form": "raw",
+    "region_note": "Common citrus fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 42,
+      "water_g": 88.1,
+      "carbohydrate_g": 10.7,
+      "sugars_g": 6.9,
+      "fiber_g": 1.6,
+      "protein_g": 0.8,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 31.2,
+      "potassium_mg": 135
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin A carotenoids",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "naringin",
+      "naringenin",
+      "furanocoumarins"
+    ],
+    "glycemic_index_typical": 25,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Can interact with multiple medicines by affecting intestinal CYP3A4 and transporters; medication-specific advice is required.",
+      "Whole fruit provides more fibre than juice."
+    ],
+    "source_basis": [
+      "USDA FoodData Central Foundation Foods / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Lemon",
+    "scientific_name": "Citrus limon",
+    "form": "raw, without peel",
+    "region_note": "Globally common citrus",
+    "nutrients_per_100g": {
+      "energy_kcal": 29,
+      "water_g": 89.0,
+      "carbohydrate_g": 9.3,
+      "sugars_g": 2.5,
+      "fiber_g": 2.8,
+      "protein_g": 1.1,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 53.0,
+      "potassium_mg": 138
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "small amounts of potassium and folate"
+    ],
+    "key_phytochemicals": [
+      "eriocitrin",
+      "hesperidin",
+      "limonoids"
+    ],
+    "glycemic_index_typical": 20,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Usually consumed in small quantities, so per-serving nutrient contribution is lower than per-100-g values suggest.",
+      "Acid can contribute to dental enamel erosion with frequent exposure."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Lime",
+    "scientific_name": "Citrus aurantiifolia / Citrus latifolia",
+    "form": "raw",
+    "region_note": "Globally common citrus",
+    "nutrients_per_100g": {
+      "energy_kcal": 30,
+      "water_g": 88.3,
+      "carbohydrate_g": 10.5,
+      "sugars_g": 1.7,
+      "fiber_g": 2.8,
+      "protein_g": 0.7,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 29.1,
+      "potassium_mg": 102
+    },
+    "key_micronutrients": [
+      "vitamin C"
+    ],
+    "key_phytochemicals": [
+      "flavanones",
+      "limonoids"
+    ],
+    "glycemic_index_typical": 20,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Usually consumed as juice/seasoning rather than a 100-g fruit portion.",
+      "Frequent direct acid exposure can affect tooth enamel."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Mandarin / Tangerine",
+    "scientific_name": "Citrus reticulata",
+    "form": "raw",
+    "region_note": "Globally common citrus",
+    "nutrients_per_100g": {
+      "energy_kcal": 53,
+      "water_g": 85.2,
+      "carbohydrate_g": 13.3,
+      "sugars_g": 10.6,
+      "fiber_g": 1.8,
+      "protein_g": 0.8,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 26.7,
+      "potassium_mg": 166
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin A carotenoids",
+      "folate"
+    ],
+    "key_phytochemicals": [
+      "hesperidin",
+      "beta-cryptoxanthin"
+    ],
+    "glycemic_index_typical": 47,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Whole segments provide fibre; juice is less satiating."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Cantaloupe / Muskmelon",
+    "scientific_name": "Cucumis melo",
+    "form": "raw",
+    "region_note": "Common melon",
+    "nutrients_per_100g": {
+      "energy_kcal": 34,
+      "water_g": 90.2,
+      "carbohydrate_g": 8.2,
+      "sugars_g": 7.9,
+      "fiber_g": 0.9,
+      "protein_g": 0.8,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 36.7,
+      "potassium_mg": 267
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "beta-carotene",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "beta-carotene",
+      "other carotenoids"
+    ],
+    "glycemic_index_typical": 65,
+    "glycemic_category": "medium",
+    "clinical_notes": [
+      "High water content keeps energy density low.",
+      "Cut melons require careful refrigeration because the rind can carry foodborne pathogens."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Honeydew Melon",
+    "scientific_name": "Cucumis melo",
+    "form": "raw",
+    "region_note": "Common melon",
+    "nutrients_per_100g": {
+      "energy_kcal": 36,
+      "water_g": 89.8,
+      "carbohydrate_g": 9.1,
+      "sugars_g": 8.1,
+      "fiber_g": 0.8,
+      "protein_g": 0.5,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 18.0,
+      "potassium_mg": 228
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium",
+      "folate"
+    ],
+    "key_phytochemicals": [
+      "phenolic compounds",
+      "small amounts of carotenoids"
+    ],
+    "glycemic_index_typical": 62,
+    "glycemic_category": "medium",
+    "clinical_notes": [
+      "High water content and low energy density.",
+      "Cut melon should be refrigerated promptly."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Avocado",
+    "scientific_name": "Persea americana",
+    "form": "raw",
+    "region_note": "Globally common; nutritionally atypical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 160,
+      "water_g": 73.2,
+      "carbohydrate_g": 8.5,
+      "sugars_g": 0.7,
+      "fiber_g": 6.7,
+      "protein_g": 2.0,
+      "fat_g": 14.7,
+      "vitamin_c_mg": 10.0,
+      "potassium_mg": 485
+    },
+    "key_micronutrients": [
+      "potassium",
+      "folate",
+      "vitamin K",
+      "vitamin E"
+    ],
+    "key_phytochemicals": [
+      "lutein",
+      "zeaxanthin",
+      "phytosterols"
+    ],
+    "glycemic_index_typical": 15,
+    "glycemic_category": "very low",
+    "clinical_notes": [
+      "Most calories come from fat, predominantly monounsaturated fat.",
+      "High fibre and low available carbohydrate compared with sweet fruits."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Coconut Meat",
+    "scientific_name": "Cocos nucifera",
+    "form": "raw mature kernel",
+    "region_note": "Common tropical fruit; nutritionally atypical",
+    "nutrients_per_100g": {
+      "energy_kcal": 354,
+      "water_g": 47.0,
+      "carbohydrate_g": 15.2,
+      "sugars_g": 6.2,
+      "fiber_g": 9.0,
+      "protein_g": 3.3,
+      "fat_g": 33.5,
+      "vitamin_c_mg": 3.3,
+      "potassium_mg": 356
+    },
+    "key_micronutrients": [
+      "manganese",
+      "copper",
+      "selenium",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "phenolic acids"
+    ],
+    "glycemic_index_typical": 45,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Much higher in fat and energy than most fruits.",
+      "A large share of coconut fat is saturated fat."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Date",
+    "scientific_name": "Phoenix dactylifera",
+    "form": "dried, commonly eaten form",
+    "region_note": "Common in Middle East, South Asia and globally",
+    "nutrients_per_100g": {
+      "energy_kcal": 277,
+      "water_g": 21.3,
+      "carbohydrate_g": 75.0,
+      "sugars_g": 66.5,
+      "fiber_g": 6.7,
+      "protein_g": 1.8,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 0.0,
+      "potassium_mg": 696
+    },
+    "key_micronutrients": [
+      "potassium",
+      "copper",
+      "magnesium",
+      "vitamin B6"
+    ],
+    "key_phytochemicals": [
+      "phenolic acids",
+      "flavonoids",
+      "carotenoids"
+    ],
+    "glycemic_index_typical": 42,
+    "glycemic_category": "low to medium but high carbohydrate density",
+    "clinical_notes": [
+      "Dried dates are energy- and carbohydrate-dense.",
+      "Portion size matters more than GI alone."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Fig",
+    "scientific_name": "Ficus carica",
+    "form": "raw",
+    "region_note": "Common Mediterranean and global fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 74,
+      "water_g": 79.1,
+      "carbohydrate_g": 19.2,
+      "sugars_g": 16.3,
+      "fiber_g": 2.9,
+      "protein_g": 0.8,
+      "fat_g": 0.3,
+      "vitamin_c_mg": 2.0,
+      "potassium_mg": 232
+    },
+    "key_micronutrients": [
+      "potassium",
+      "calcium",
+      "magnesium",
+      "vitamin K"
+    ],
+    "key_phytochemicals": [
+      "phenolic acids",
+      "flavonoids",
+      "anthocyanins in dark figs"
+    ],
+    "glycemic_index_typical": 35,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Dried figs are much more concentrated in sugar, energy and minerals than fresh figs.",
+      "Contains small seeds that add fibre."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Raisin",
+    "scientific_name": "Vitis vinifera",
+    "form": "dried grapes",
+    "region_note": "Globally common dried fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 299,
+      "water_g": 15.4,
+      "carbohydrate_g": 79.2,
+      "sugars_g": 59.2,
+      "fiber_g": 3.7,
+      "protein_g": 3.1,
+      "fat_g": 0.5,
+      "vitamin_c_mg": 2.3,
+      "potassium_mg": 749
+    },
+    "key_micronutrients": [
+      "potassium",
+      "iron",
+      "copper",
+      "boron"
+    ],
+    "key_phytochemicals": [
+      "phenolic acids",
+      "flavonols"
+    ],
+    "glycemic_index_typical": 54,
+    "glycemic_category": "low to medium but carbohydrate-dense",
+    "clinical_notes": [
+      "Water removal makes raisins much more calorie- and sugar-dense than grapes.",
+      "Portion control is important in carbohydrate-managed diets."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Passion Fruit",
+    "scientific_name": "Passiflora edulis",
+    "form": "raw",
+    "region_note": "Common tropical/subtropical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 97,
+      "water_g": 72.9,
+      "carbohydrate_g": 23.4,
+      "sugars_g": 11.2,
+      "fiber_g": 10.4,
+      "protein_g": 2.2,
+      "fat_g": 0.7,
+      "vitamin_c_mg": 30.0,
+      "potassium_mg": 348
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "vitamin A carotenoids",
+      "potassium",
+      "magnesium"
+    ],
+    "key_phytochemicals": [
+      "carotenoids",
+      "flavonoids",
+      "piceatannol-related stilbenes"
+    ],
+    "glycemic_index_typical": 30,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Very high fibre when seeds and pulp are eaten.",
+      "Actual serving size is usually much less than 100 g."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Lychee / Litchi",
+    "scientific_name": "Litchi chinensis",
+    "form": "raw",
+    "region_note": "Common in South and East Asia",
+    "nutrients_per_100g": {
+      "energy_kcal": 66,
+      "water_g": 81.8,
+      "carbohydrate_g": 16.5,
+      "sugars_g": 15.2,
+      "fiber_g": 1.3,
+      "protein_g": 0.8,
+      "fat_g": 0.4,
+      "vitamin_c_mg": 71.5,
+      "potassium_mg": 171
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "copper",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "flavanols",
+      "anthocyanins in peel"
+    ],
+    "glycemic_index_typical": 50,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Relatively high natural sugar for a fresh fruit.",
+      "The inedible peel contains different phytochemicals from the edible pulp."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Jackfruit",
+    "scientific_name": "Artocarpus heterophyllus",
+    "form": "raw, ripe",
+    "region_note": "Common in South and Southeast Asia",
+    "nutrients_per_100g": {
+      "energy_kcal": 95,
+      "water_g": 73.5,
+      "carbohydrate_g": 23.3,
+      "sugars_g": 19.1,
+      "fiber_g": 1.5,
+      "protein_g": 1.7,
+      "fat_g": 0.6,
+      "vitamin_c_mg": 13.7,
+      "potassium_mg": 448
+    },
+    "key_micronutrients": [
+      "potassium",
+      "vitamin C",
+      "vitamin B6",
+      "magnesium"
+    ],
+    "key_phytochemicals": [
+      "carotenoids",
+      "flavonoids",
+      "phenolic acids"
+    ],
+    "glycemic_index_typical": 50,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Ripe jackfruit is substantially sweeter than young green jackfruit.",
+      "Green jackfruit used as a vegetable has a different carbohydrate profile."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy",
+      "ICMR-NIN IFCT 2017"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Dragon Fruit / Pitaya",
+    "scientific_name": "Selenicereus undatus / Hylocereus spp.",
+    "form": "raw",
+    "region_note": "Increasingly common globally",
+    "nutrients_per_100g": {
+      "energy_kcal": 57,
+      "water_g": 84.0,
+      "carbohydrate_g": 13.0,
+      "sugars_g": 8.0,
+      "fiber_g": 3.0,
+      "protein_g": 1.2,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 3.0,
+      "potassium_mg": 268
+    },
+    "key_micronutrients": [
+      "magnesium",
+      "potassium",
+      "small amounts of iron"
+    ],
+    "key_phytochemicals": [
+      "betalains in red/purple varieties",
+      "phenolic compounds"
+    ],
+    "glycemic_index_typical": 48,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Values vary considerably among white-, red- and yellow-fleshed cultivars.",
+      "Edible seeds contribute small amounts of unsaturated fat."
+    ],
+    "source_basis": [
+      "food-composition literature; USDA coverage varies by cultivar"
+    ],
+    "data_confidence": "moderate"
+  },
+  {
+    "common_name": "Persimmon",
+    "scientific_name": "Diospyros kaki",
+    "form": "raw",
+    "region_note": "Common in East Asia and increasingly global",
+    "nutrients_per_100g": {
+      "energy_kcal": 70,
+      "water_g": 80.3,
+      "carbohydrate_g": 18.6,
+      "sugars_g": 12.5,
+      "fiber_g": 3.6,
+      "protein_g": 0.6,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 7.5,
+      "potassium_mg": 161
+    },
+    "key_micronutrients": [
+      "vitamin A carotenoids",
+      "manganese",
+      "vitamin C"
+    ],
+    "key_phytochemicals": [
+      "carotenoids",
+      "tannins",
+      "flavonoids"
+    ],
+    "glycemic_index_typical": 50,
+    "glycemic_category": "low to medium",
+    "clinical_notes": [
+      "Astringent varieties contain more tannins before full ripening.",
+      "Energy and sugar are higher than in many watery fruits."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Sapota / Chikoo / Sapodilla",
+    "scientific_name": "Manilkara zapota",
+    "form": "raw, ripe",
+    "region_note": "Very common in India and tropical regions",
+    "nutrients_per_100g": {
+      "energy_kcal": 73,
+      "water_g": 73.6,
+      "carbohydrate_g": 13.9,
+      "sugars_g": null,
+      "fiber_g": 9.6,
+      "protein_g": 0.92,
+      "fat_g": 1.26,
+      "vitamin_c_mg": null,
+      "potassium_mg": null
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium and copper reported in composition databases"
+    ],
+    "key_phytochemicals": [
+      "polyphenols",
+      "tannins"
+    ],
+    "glycemic_index_typical": 56,
+    "glycemic_category": "medium; values vary",
+    "clinical_notes": [
+      "ICMR-NIN IFCT reports unusually high total dietary fibre for the sampled Indian sapota.",
+      "Cultivar and ripeness can strongly influence sweetness and composition."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017, food code E060"
+    ],
+    "data_confidence": "high for IFCT macronutrients; moderate for GI"
+  },
+  {
+    "common_name": "Custard Apple / Sitaphal",
+    "scientific_name": "Annona squamosa",
+    "form": "raw pulp",
+    "region_note": "Common seasonal fruit in India",
+    "nutrients_per_100g": {
+      "energy_kcal": 99,
+      "water_g": 71.6,
+      "carbohydrate_g": 20.38,
+      "sugars_g": null,
+      "fiber_g": 5.1,
+      "protein_g": 1.62,
+      "fat_g": 0.67,
+      "vitamin_c_mg": 21.51,
+      "potassium_mg": 278
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "magnesium",
+      "potassium",
+      "calcium"
+    ],
+    "key_phytochemicals": [
+      "acetogenin-related compounds occur in Annona species; edible pulp also contains phenolics"
+    ],
+    "glycemic_index_typical": 54,
+    "glycemic_category": "low to medium; limited data",
+    "clinical_notes": [
+      "Relatively energy-dense for a fresh fruit.",
+      "Seeds should not be eaten."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017, food code E016"
+    ],
+    "data_confidence": "high for IFCT nutrients; moderate for GI"
+  },
+  {
+    "common_name": "Amla / Indian Gooseberry",
+    "scientific_name": "Phyllanthus emblica",
+    "form": "raw",
+    "region_note": "Very common in India; often consumed fresh, pickled, powdered or as juice",
+    "nutrients_per_100g": {
+      "energy_kcal": 24,
+      "water_g": null,
+      "carbohydrate_g": 4.4,
+      "sugars_g": null,
+      "fiber_g": null,
+      "protein_g": 0.4,
+      "fat_g": null,
+      "vitamin_c_mg": 250,
+      "potassium_mg": null
+    },
+    "key_micronutrients": [
+      "exceptionally high vitamin C"
+    ],
+    "key_phytochemicals": [
+      "emblicanins",
+      "gallic acid",
+      "ellagic acid",
+      "tannins"
+    ],
+    "glycemic_index_typical": null,
+    "glycemic_category": "insufficient standardized GI data",
+    "clinical_notes": [
+      "Vitamin C values vary widely by cultivar, freshness and analytical method.",
+      "Commercial amla products can contain added sugar or salt."
+    ],
+    "source_basis": [
+      "ICMR-NIN Indian food-composition references; phytochemical literature"
+    ],
+    "data_confidence": "moderate because reported vitamin C varies substantially"
+  },
+  {
+    "common_name": "Jamun / Java Plum",
+    "scientific_name": "Syzygium cumini",
+    "form": "raw",
+    "region_note": "Common seasonal fruit in India",
+    "nutrients_per_100g": {
+      "energy_kcal": 60,
+      "water_g": 84.8,
+      "carbohydrate_g": 14.0,
+      "sugars_g": null,
+      "fiber_g": 0.6,
+      "protein_g": 0.7,
+      "fat_g": 0.2,
+      "vitamin_c_mg": 14.0,
+      "potassium_mg": 55
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "small amounts of iron and potassium"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "ellagic acid",
+      "gallic acid"
+    ],
+    "glycemic_index_typical": null,
+    "glycemic_category": "limited standardized GI data",
+    "clinical_notes": [
+      "Deep purple color reflects anthocyanins.",
+      "Claims that jamun alone treats diabetes should not replace medical or dietary management."
+    ],
+    "source_basis": [
+      "Indian food-composition literature; values vary by source and cultivar"
+    ],
+    "data_confidence": "moderate"
+  },
+  {
+    "common_name": "Star Fruit / Carambola",
+    "scientific_name": "Averrhoa carambola",
+    "form": "raw",
+    "region_note": "Common tropical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 26,
+      "water_g": 91.18,
+      "carbohydrate_g": 4.51,
+      "sugars_g": null,
+      "fiber_g": 2.81,
+      "protein_g": 0.79,
+      "fat_g": 0.39,
+      "vitamin_c_mg": 34.4,
+      "potassium_mg": 133
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "flavonoids",
+      "phenolic acids"
+    ],
+    "glycemic_index_typical": 36,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Important safety note: star fruit can cause serious neurotoxicity in people with significant kidney impairment because caramboxin and oxalate may accumulate.",
+      "People with CKD should obtain clinician-specific advice before consuming it."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017 for proximate composition",
+      "USDA FoodData Central / literature for micronutrients"
+    ],
+    "data_confidence": "high for proximate values"
+  },
+  {
+    "common_name": "Mulberry",
+    "scientific_name": "Morus spp.",
+    "form": "raw",
+    "region_note": "Common regionally in Asia, Europe and Middle East",
+    "nutrients_per_100g": {
+      "energy_kcal": 43,
+      "water_g": 87.7,
+      "carbohydrate_g": 9.8,
+      "sugars_g": 8.1,
+      "fiber_g": 1.7,
+      "protein_g": 1.4,
+      "fat_g": 0.4,
+      "vitamin_c_mg": 36.4,
+      "potassium_mg": 194
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "iron",
+      "potassium"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins",
+      "rutin",
+      "chlorogenic acid"
+    ],
+    "glycemic_index_typical": 25,
+    "glycemic_category": "low; limited data",
+    "clinical_notes": [
+      "Dark mulberries provide more anthocyanins than pale varieties.",
+      "Fresh berries are highly perishable."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high for nutrients; moderate for GI"
+  },
+  {
+    "common_name": "Cranberry",
+    "scientific_name": "Vaccinium macrocarpon",
+    "form": "raw",
+    "region_note": "Common in North America and globally as processed products",
+    "nutrients_per_100g": {
+      "energy_kcal": 46,
+      "water_g": 87.1,
+      "carbohydrate_g": 12.2,
+      "sugars_g": 4.0,
+      "fiber_g": 4.6,
+      "protein_g": 0.4,
+      "fat_g": 0.1,
+      "vitamin_c_mg": 14.0,
+      "potassium_mg": 80
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "manganese",
+      "vitamin E"
+    ],
+    "key_phytochemicals": [
+      "A-type proanthocyanidins",
+      "anthocyanins",
+      "flavonols"
+    ],
+    "glycemic_index_typical": 45,
+    "glycemic_category": "low",
+    "clinical_notes": [
+      "Raw cranberries are tart; many cranberry products contain substantial added sugar.",
+      "Juice cocktail is nutritionally different from whole raw cranberries."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high"
+  },
+  {
+    "common_name": "Gooseberry",
+    "scientific_name": "Ribes uva-crispa",
+    "form": "raw",
+    "region_note": "Common regionally; distinct from Indian gooseberry/amla",
+    "nutrients_per_100g": {
+      "energy_kcal": 44,
+      "water_g": 87.9,
+      "carbohydrate_g": 10.2,
+      "sugars_g": null,
+      "fiber_g": 4.3,
+      "protein_g": 0.9,
+      "fat_g": 0.6,
+      "vitamin_c_mg": 27.7,
+      "potassium_mg": 198
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium",
+      "manganese"
+    ],
+    "key_phytochemicals": [
+      "anthocyanins in dark cultivars",
+      "flavonols",
+      "phenolic acids"
+    ],
+    "glycemic_index_typical": 25,
+    "glycemic_category": "low; limited data",
+    "clinical_notes": [
+      "Not the same fruit as amla despite the shared English word 'gooseberry'."
+    ],
+    "source_basis": [
+      "USDA FoodData Central / SR Legacy"
+    ],
+    "data_confidence": "high for nutrients"
+  },
+  {
+    "common_name": "Rambutan",
+    "scientific_name": "Nephelium lappaceum",
+    "form": "raw",
+    "region_note": "Common in Southeast Asia; increasingly global",
+    "nutrients_per_100g": {
+      "energy_kcal": 73,
+      "water_g": 80.87,
+      "carbohydrate_g": 16.84,
+      "sugars_g": null,
+      "fiber_g": 1.02,
+      "protein_g": 0.68,
+      "fat_g": 0.16,
+      "vitamin_c_mg": 4.9,
+      "potassium_mg": 42
+    },
+    "key_micronutrients": [
+      "copper",
+      "manganese",
+      "small amounts of vitamin C"
+    ],
+    "key_phytochemicals": [
+      "phenolics",
+      "flavonoids"
+    ],
+    "glycemic_index_typical": null,
+    "glycemic_category": "limited standardized GI data",
+    "clinical_notes": [
+      "Only the translucent flesh is typically eaten; peel and seed are not normally consumed."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017, food code E059",
+      "USDA/literature for selected micronutrients"
+    ],
+    "data_confidence": "high for IFCT proximate composition"
+  },
+  {
+    "common_name": "Soursop / Graviola",
+    "scientific_name": "Annona muricata",
+    "form": "raw",
+    "region_note": "Common tropical fruit",
+    "nutrients_per_100g": {
+      "energy_kcal": 62,
+      "water_g": 80.85,
+      "carbohydrate_g": 11.94,
+      "sugars_g": null,
+      "fiber_g": 4.95,
+      "protein_g": 0.74,
+      "fat_g": 0.94,
+      "vitamin_c_mg": 20.6,
+      "potassium_mg": 278
+    },
+    "key_micronutrients": [
+      "vitamin C",
+      "potassium",
+      "magnesium"
+    ],
+    "key_phytochemicals": [
+      "phenolic compounds",
+      "annonaceous acetogenins in various plant tissues"
+    ],
+    "glycemic_index_typical": 32,
+    "glycemic_category": "low; limited data",
+    "clinical_notes": [
+      "Edible pulp is distinct from seeds and other plant parts.",
+      "Concentrated graviola supplements should not be assumed to have the same safety profile as eating the fruit."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017, food code E061",
+      "USDA/literature for selected micronutrients"
+    ],
+    "data_confidence": "high for proximate composition; moderate for GI"
+  },
+  {
+    "common_name": "Tamarind",
+    "scientific_name": "Tamarindus indica",
+    "form": "raw pulp",
+    "region_note": "Very common in India, Southeast Asia, Africa and Latin cuisines",
+    "nutrients_per_100g": {
+      "energy_kcal": 288,
+      "water_g": 20.83,
+      "carbohydrate_g": 67.35,
+      "sugars_g": 38.8,
+      "fiber_g": 5.31,
+      "protein_g": 2.92,
+      "fat_g": 0.15,
+      "vitamin_c_mg": 3.5,
+      "potassium_mg": 628
+    },
+    "key_micronutrients": [
+      "potassium",
+      "magnesium",
+      "thiamine",
+      "iron"
+    ],
+    "key_phytochemicals": [
+      "tartaric acid",
+      "polyphenols",
+      "flavonoids"
+    ],
+    "glycemic_index_typical": 23,
+    "glycemic_category": "low GI but very carbohydrate-dense pulp",
+    "clinical_notes": [
+      "Usually eaten in much smaller quantities than 100 g.",
+      "Sweetened tamarind candies and sauces may contain large amounts of added sugar."
+    ],
+    "source_basis": [
+      "ICMR-NIN IFCT 2017, food code E064",
+      "USDA FoodData Central / SR Legacy for comparison"
+    ],
+    "data_confidence": "high"
+  }
+]
