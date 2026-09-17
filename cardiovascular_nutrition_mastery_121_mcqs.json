@@ -1,0 +1,4230 @@
+{
+  "metadata": {
+    "title": "Cardiovascular Nutrition Mastery Bank",
+    "version": "1.0.0",
+    "evidenceReviewedThrough": "2026-09-17",
+    "questionCount": 121,
+    "targetAudience": "Dietitians and clinical nutrition professionals aiming for advanced/senior mastery",
+    "purpose": "Evidence-grounded multiple-choice mastery bank spanning nutrient targets, food selection, label reading, calculations, guideline interpretation and clinical decision-making.",
+    "format": "Single-best-answer MCQ; 4 options per question",
+    "masteryPrinciple": "Questions intentionally test application and context, not only recall. Disease-specific targets are labeled by guideline context to avoid false universal rules.",
+    "recommendedAppLogic": {
+      "initialPass": "Randomize within domains and require >=80% overall before advancing.",
+      "masteryThreshold": ">=90% in every domain with no critical-safety misses in the latest 20 questions.",
+      "spacedRepetition": "Repeat missed questions after 1 day, 3 days, 7 days and 21 days; then use variant questions.",
+      "adaptiveRule": "Increase clinical_reasoning and calculation items when recall accuracy exceeds 85%.",
+      "criticalSafetyTopics": [
+        "potassium salt substitutes in CKD/hyperkalemia",
+        "fluid restriction is not universal in heart failure",
+        "diet does not replace guideline-directed medication after MI/ASCVD",
+        "postoperative underfeeding/malnutrition risk"
+      ]
+    },
+    "domainDistribution": {
+      "Dietary fats": 20,
+      "Omega-3": 8,
+      "Fiber": 8,
+      "Hypertension & DASH": 21,
+      "Sugar, cholesterol & labels": 12,
+      "Mediterranean pattern": 10,
+      "Dyslipidemia": 12,
+      "Weight management": 8,
+      "Post-MI & post-CABG": 10,
+      "Heart failure": 12
+    },
+    "difficultyDistribution": {
+      "beginner": 33,
+      "intermediate": 50,
+      "advanced": 38
+    },
+    "competencyDistribution": {
+      "food_choice": 16,
+      "mechanism": 8,
+      "guideline_interpretation": 7,
+      "calculation": 8,
+      "label_reading": 8,
+      "food_source": 5,
+      "clinical_reasoning": 38,
+      "guideline_recall": 24,
+      "food_pattern": 5,
+      "concept": 1,
+      "monitoring": 1
+    },
+    "disclaimer": "Educational content for professional learning. Patient-specific recommendations require individualized assessment, local protocols and the treating clinical team's orders."
+  },
+  "quizBlueprint": [
+    {
+      "focus": "Nutrient targets and quantitative fluency",
+      "include": [
+        "saturated fat percentages and gram conversions",
+        "sodium vs salt conversions",
+        "added sugar grams/teaspoons",
+        "fish serving size/frequency",
+        "DASH serving pattern",
+        "5–10% weight-loss calculations"
+      ]
+    },
+    {
+      "focus": "Food-source recognition and substitution",
+      "include": [
+        "saturated vs unsaturated fats",
+        "industrial trans fat clues",
+        "MUFA/PUFA and omega-3 sources",
+        "soluble-fiber foods",
+        "high-sodium processed foods",
+        "Mediterranean and DASH meal construction"
+      ]
+    },
+    {
+      "focus": "Clinical interpretation",
+      "include": [
+        "hypertension categories",
+        "LDL-C/non-HDL-C goals in secondary prevention",
+        "Lp(a) and ApoB concepts",
+        "high triglyceride priorities",
+        "post-MI/CABG secondary prevention",
+        "heart-failure congestion, hyponatremia and malnutrition"
+      ]
+    },
+    {
+      "focus": "Safety and contextual exceptions",
+      "include": [
+        "potassium in CKD/hyperkalemia",
+        "fluid vs sodium restriction",
+        "general-population vs disease-specific saturated-fat targets",
+        "supplements vs evidence-based therapies",
+        "acute postoperative nutrition vs intentional weight loss"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "AHA_2026_DIET",
+      "title": "2026 Dietary Guidance to Improve Cardiovascular Health",
+      "organization": "American Heart Association",
+      "year": 2026,
+      "url": "https://professional.heart.org/en/science-news/2026-dietary-guidance-to-improve-cardiovascular-health/top-things-to-know",
+      "scope": "Overall heart-healthy dietary pattern, saturated/unsaturated fat, whole grains, plant proteins, sodium, added sugar, alcohol, dietary cholesterol."
+    },
+    {
+      "id": "AHA_2026_DYSLIPIDEMIA",
+      "title": "2026 Guideline on the Management of Dyslipidemia",
+      "organization": "ACC/AHA and collaborating organizations",
+      "year": 2026,
+      "url": "https://professional.heart.org/en/science-news/2026-guideline-on-the-management-of-dyslipidemia/top-things-to-know",
+      "scope": "LDL-C/non-HDL-C goals, Lp(a), ApoB, hypertriglyceridemia, secondary prevention."
+    },
+    {
+      "id": "AHA_2025_HTN",
+      "title": "2025 High Blood Pressure Guideline",
+      "organization": "AHA/ACC and collaborating organizations",
+      "year": 2025,
+      "url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+      "scope": "Blood-pressure classification and lifestyle management, including DASH, sodium, potassium, weight and alcohol."
+    },
+    {
+      "id": "NHLBI_DASH",
+      "title": "DASH Eating Plan",
+      "organization": "National Heart, Lung, and Blood Institute",
+      "year": 2026,
+      "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+      "scope": "DASH food groups, serving pattern and sodium levels."
+    },
+    {
+      "id": "WHO_SODIUM",
+      "title": "Sodium reduction",
+      "organization": "World Health Organization",
+      "year": 2026,
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sodium-reduction",
+      "scope": "Population sodium and salt limits; lower-sodium salt substitutes."
+    },
+    {
+      "id": "AHA_OMEGA3",
+      "title": "Fish and Omega-3 Fatty Acids",
+      "organization": "American Heart Association",
+      "year": 2024,
+      "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/fish-and-omega-3-fatty-acids",
+      "scope": "Fish intake and omega-3 food sources."
+    },
+    {
+      "id": "AHA_SUGAR",
+      "title": "How Much Sugar Is Too Much?",
+      "organization": "American Heart Association",
+      "year": 2026,
+      "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much",
+      "scope": "Added sugar limits and common sources."
+    },
+    {
+      "id": "AHA_LABELS",
+      "title": "Understanding Food Nutrition Labels",
+      "organization": "American Heart Association",
+      "year": 2025,
+      "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/understanding-food-nutrition-labels",
+      "scope": "Label interpretation, fiber, sodium, saturated and trans fat."
+    },
+    {
+      "id": "AHA_MEDITERRANEAN",
+      "title": "What is the Mediterranean Diet?",
+      "organization": "American Heart Association",
+      "year": 2026,
+      "url": "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/mediterranean-diet",
+      "scope": "Mediterranean-style eating pattern."
+    },
+    {
+      "id": "AHA_2023_CCD",
+      "title": "2023 Guideline for the Management of Patients With Chronic Coronary Disease",
+      "organization": "AHA/ACC and collaborating organizations",
+      "year": 2023,
+      "url": "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-chronic-coronary-disease/top-things-to-know",
+      "scope": "Secondary prevention, exercise/cardiac rehabilitation and coronary disease management."
+    },
+    {
+      "id": "AHA_2025_ACS",
+      "title": "2025 Guideline for the Management of Patients With Acute Coronary Syndromes",
+      "organization": "ACC/AHA and collaborating organizations",
+      "year": 2025,
+      "url": "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes/top-things-to-know",
+      "scope": "Post-ACS secondary prevention and cardiac rehabilitation."
+    },
+    {
+      "id": "AHA_2022_HF",
+      "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+      "organization": "AHA/ACC/HFSA",
+      "year": 2022,
+      "url": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063",
+      "scope": "Heart failure, sodium and fluid-restriction evidence."
+    },
+    {
+      "id": "AHA_WEIGHT",
+      "title": "Eating Well and Losing Weight",
+      "organization": "American Heart Association",
+      "year": 2024,
+      "url": "https://www.heart.org/en/health-topics/cardiac-rehab/taking-care-of-yourself/eating-well-and-losing-weight",
+      "scope": "Weight reduction and cardiac rehabilitation nutrition."
+    },
+    {
+      "id": "ESPEN_SURGERY_2025",
+      "title": "ESPEN guideline on clinical nutrition in surgery – Update 2025",
+      "organization": "European Society for Clinical Nutrition and Metabolism",
+      "year": 2025,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40957230/",
+      "scope": "Perioperative nutrition, early oral feeding and nutritional-risk management after major surgery."
+    }
+  ],
+  "questions": [
+    {
+      "id": "CVN-001",
+      "domain": "Dietary fats",
+      "subtopic": "Saturated fat",
+      "difficulty": "beginner",
+      "competency": "food_choice",
+      "question": "Which swap best lowers saturated fat while preserving an unsaturated-fat source?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replace butter with olive or canola oil."
+        },
+        {
+          "id": "B",
+          "text": "Replace avocado with ghee."
+        },
+        {
+          "id": "C",
+          "text": "Replace nuts with full-fat cheese."
+        },
+        {
+          "id": "D",
+          "text": "Replace olive oil with coconut oil."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Replace butter with olive or canola oil.",
+      "explanation": "Liquid non-tropical plant oils are rich in unsaturated fats and are preferred in place of saturated-fat sources such as butter, ghee, coconut and palm oils.",
+      "clinicalPearl": "The benefit is primarily from replacement: what replaces saturated fat matters.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-002",
+      "domain": "Dietary fats",
+      "subtopic": "Saturated fat",
+      "difficulty": "beginner",
+      "competency": "mechanism",
+      "question": "What is the main lipid effect of excess saturated fat that concerns a cardiovascular dietitian?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It reliably lowers LDL cholesterol."
+        },
+        {
+          "id": "B",
+          "text": "It tends to raise LDL cholesterol."
+        },
+        {
+          "id": "C",
+          "text": "It eliminates dietary cholesterol absorption."
+        },
+        {
+          "id": "D",
+          "text": "It selectively lowers triglycerides without affecting LDL."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "It tends to raise LDL cholesterol.",
+      "explanation": "Saturated fat can increase LDL-C; replacing it with unsaturated fat is a central dietary strategy for reducing atherogenic lipid exposure.",
+      "clinicalPearl": "Do not teach 'low fat' in isolation; teach fat quality.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-003",
+      "domain": "Dietary fats",
+      "subtopic": "Saturated fat",
+      "difficulty": "intermediate",
+      "competency": "guideline_interpretation",
+      "question": "Which statement best reflects the 2026 AHA dietary guidance for the general population?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dietary saturated fat is no longer relevant if total calories are controlled."
+        },
+        {
+          "id": "B",
+          "text": "Everyone with or without CVD must consume exactly 6% of calories from saturated fat."
+        },
+        {
+          "id": "C",
+          "text": "Coconut oil is preferred because it is plant-based."
+        },
+        {
+          "id": "D",
+          "text": "Heart-healthy dietary patterns are typically unlikely to exceed 10% of energy from saturated fat, with emphasis on replacing saturated fat with unsaturated fat."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Heart-healthy dietary patterns are typically unlikely to exceed 10% of energy from saturated fat, with emphasis on replacing saturated fat with unsaturated fat.",
+      "explanation": "The 2026 AHA statement emphasizes dietary patterns and substitution with unsaturated fat; it notes heart-healthy patterns are generally unlikely to exceed 10% of energy from saturated fat.",
+      "clinicalPearl": "General-population guidance and disease-specific therapeutic targets are not always identical.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-004",
+      "domain": "Dietary fats",
+      "subtopic": "Saturated fat",
+      "difficulty": "advanced",
+      "competency": "calculation",
+      "question": "A patient with established coronary disease is prescribed a 2,000-kcal diet with saturated fat limited to 6% of energy. Approximately how many grams of saturated fat is that per day?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6 g"
+        },
+        {
+          "id": "B",
+          "text": "13 g"
+        },
+        {
+          "id": "C",
+          "text": "33 g"
+        },
+        {
+          "id": "D",
+          "text": "22 g"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "13 g",
+      "explanation": "6% of 2,000 kcal = 120 kcal. Fat provides 9 kcal/g, so 120 ÷ 9 ≈ 13.3 g.",
+      "clinicalPearl": "Be able to convert a percentage-of-energy fat target into grams at bedside speed.",
+      "sourceIds": [
+        "AHA_2023_CCD"
+      ]
+    },
+    {
+      "id": "CVN-005",
+      "domain": "Dietary fats",
+      "subtopic": "Saturated fat",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "On a 1,800-kcal diet, 10% of energy from saturated fat equals approximately how many grams?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20 g"
+        },
+        {
+          "id": "B",
+          "text": "30 g"
+        },
+        {
+          "id": "C",
+          "text": "45 g"
+        },
+        {
+          "id": "D",
+          "text": "10 g"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "20 g",
+      "explanation": "10% of 1,800 kcal = 180 kcal; 180 ÷ 9 = 20 g.",
+      "clinicalPearl": "Fat calories are converted to grams by dividing by 9.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-006",
+      "domain": "Dietary fats",
+      "subtopic": "Food sources",
+      "difficulty": "beginner",
+      "competency": "food_choice",
+      "question": "Which food is most likely to be relatively high in saturated fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Walnuts"
+        },
+        {
+          "id": "B",
+          "text": "Flaxseed"
+        },
+        {
+          "id": "C",
+          "text": "Olive oil"
+        },
+        {
+          "id": "D",
+          "text": "Butter"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Butter",
+      "explanation": "Butter is a major saturated-fat source. Olive oil, walnuts and flaxseed are predominantly sources of unsaturated fats.",
+      "clinicalPearl": "Plant origin does not automatically mean low saturated fat; coconut and palm oils are key exceptions.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-007",
+      "domain": "Dietary fats",
+      "subtopic": "Food sources",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which plant fat is an important exception to the rule that plant oils are usually rich in unsaturated fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Safflower oil"
+        },
+        {
+          "id": "B",
+          "text": "Coconut oil"
+        },
+        {
+          "id": "C",
+          "text": "Olive oil"
+        },
+        {
+          "id": "D",
+          "text": "Canola oil"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Coconut oil",
+      "explanation": "Coconut and palm oils are tropical oils and are relatively high in saturated fat.",
+      "clinicalPearl": "Teach 'non-tropical liquid plant oils' rather than simply 'vegetable oils'.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-008",
+      "domain": "Dietary fats",
+      "subtopic": "Trans fat",
+      "difficulty": "beginner",
+      "competency": "label_reading",
+      "question": "Which ingredient-list term most strongly signals a source of industrial trans fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Canola oil"
+        },
+        {
+          "id": "B",
+          "text": "Extra-virgin olive oil"
+        },
+        {
+          "id": "C",
+          "text": "Partially hydrogenated oil"
+        },
+        {
+          "id": "D",
+          "text": "High-oleic sunflower oil"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Partially hydrogenated oil",
+      "explanation": "Partially hydrogenated oils are a classic source of industrial trans fat.",
+      "clinicalPearl": "A label can show 0 g trans fat per serving while still listing partially hydrogenated oil if the amount is below the labeling threshold.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-009",
+      "domain": "Dietary fats",
+      "subtopic": "Trans fat",
+      "difficulty": "intermediate",
+      "competency": "label_reading",
+      "question": "A food label states '0 g trans fat' but the ingredients include partially hydrogenated oil. What is the best interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The product contains only saturated fat, not trans fat."
+        },
+        {
+          "id": "B",
+          "text": "The product is automatically heart-healthy."
+        },
+        {
+          "id": "C",
+          "text": "The ingredient list is irrelevant because 0 g always means none is present."
+        },
+        {
+          "id": "D",
+          "text": "The product may still contain a small amount of trans fat per serving."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "The product may still contain a small amount of trans fat per serving.",
+      "explanation": "Small amounts may round to 0 g on the label; the ingredient list provides additional information.",
+      "clinicalPearl": "Always teach dietitians to read both Nutrition Facts and the ingredient list.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-010",
+      "domain": "Dietary fats",
+      "subtopic": "Trans fat",
+      "difficulty": "beginner",
+      "competency": "mechanism",
+      "question": "What combination of lipoprotein effects is classically associated with industrial trans fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Higher HDL with no LDL effect"
+        },
+        {
+          "id": "B",
+          "text": "Higher LDL and lower HDL"
+        },
+        {
+          "id": "C",
+          "text": "Lower LDL and higher HDL"
+        },
+        {
+          "id": "D",
+          "text": "Lower LDL and lower triglycerides only"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Higher LDL and lower HDL",
+      "explanation": "Trans fat adversely affects lipoproteins, including raising LDL and lowering HDL.",
+      "clinicalPearl": "Avoid industrial trans fat rather than trying to fit it into a discretionary allowance.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-011",
+      "domain": "Dietary fats",
+      "subtopic": "MUFA",
+      "difficulty": "beginner",
+      "competency": "food_source",
+      "question": "Which food is a classic source of monounsaturated fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Olive oil"
+        },
+        {
+          "id": "B",
+          "text": "Coconut oil"
+        },
+        {
+          "id": "C",
+          "text": "Shortening made with partially hydrogenated oil"
+        },
+        {
+          "id": "D",
+          "text": "Butter"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Olive oil",
+      "explanation": "Olive oil is rich in monounsaturated fatty acids and is a core fat source in Mediterranean-style eating.",
+      "clinicalPearl": "MUFA-rich foods are useful when they replace saturated-fat sources.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-012",
+      "domain": "Dietary fats",
+      "subtopic": "PUFA",
+      "difficulty": "beginner",
+      "competency": "food_source",
+      "question": "Which food is a good source of polyunsaturated fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Butter"
+        },
+        {
+          "id": "B",
+          "text": "Coconut cream"
+        },
+        {
+          "id": "C",
+          "text": "Walnuts"
+        },
+        {
+          "id": "D",
+          "text": "Ghee"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Walnuts",
+      "explanation": "Walnuts contain substantial polyunsaturated fat, including alpha-linolenic acid.",
+      "clinicalPearl": "Nuts add unsaturated fat, fiber and plant protein but remain energy-dense.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-013",
+      "domain": "Dietary fats",
+      "subtopic": "MUFA/PUFA",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "A patient asks whether all fat should be minimized to lower cardiovascular risk. What is the best response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase coconut oil because it raises HDL."
+        },
+        {
+          "id": "B",
+          "text": "Ignore fat quality if body weight is normal."
+        },
+        {
+          "id": "C",
+          "text": "Focus on replacing saturated and trans fats with unsaturated fats rather than minimizing all fat."
+        },
+        {
+          "id": "D",
+          "text": "Eliminate nearly all fat, including nuts and olive oil."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Focus on replacing saturated and trans fats with unsaturated fats rather than minimizing all fat.",
+      "explanation": "Current cardiovascular guidance emphasizes fat quality and replacement, not indiscriminate fat restriction.",
+      "clinicalPearl": "The question is not merely 'how much fat?' but 'which fat, replacing what?'.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-014",
+      "domain": "Dietary fats",
+      "subtopic": "Replacement",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which replacement is most consistent with lowering LDL-C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replace butter with refined starch."
+        },
+        {
+          "id": "B",
+          "text": "Replace butter with a polyunsaturated-rich liquid plant oil."
+        },
+        {
+          "id": "C",
+          "text": "Add butter while reducing vegetables."
+        },
+        {
+          "id": "D",
+          "text": "Replace olive oil with coconut oil."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Replace butter with a polyunsaturated-rich liquid plant oil.",
+      "explanation": "Replacing saturated fat with unsaturated fat, particularly PUFA, lowers LDL-C more effectively than replacing saturated fat with refined carbohydrate.",
+      "clinicalPearl": "Replacement nutrient determines much of the cardiometabolic effect.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-015",
+      "domain": "Dietary fats",
+      "subtopic": "Cooking oils",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which cooking-fat recommendation is most aligned with AHA guidance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use ghee as the default because it is minimally processed."
+        },
+        {
+          "id": "B",
+          "text": "Prefer coconut oil over all seed oils."
+        },
+        {
+          "id": "C",
+          "text": "Use non-tropical liquid plant oils such as olive, canola, corn, soybean or sunflower oil."
+        },
+        {
+          "id": "D",
+          "text": "Use shortening containing partially hydrogenated oils for high-heat cooking."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Use non-tropical liquid plant oils such as olive, canola, corn, soybean or sunflower oil.",
+      "explanation": "Non-tropical liquid plant oils provide unsaturated fats and are preferred over solid fats and tropical oils.",
+      "clinicalPearl": "Avoid false dichotomies such as 'natural fat good, seed oil bad'; evaluate fatty-acid profile and overall pattern.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-016",
+      "domain": "Dietary fats",
+      "subtopic": "Clinical context",
+      "difficulty": "advanced",
+      "competency": "guideline_interpretation",
+      "question": "Why can two credible cardiovascular guidelines appear to give different saturated-fat percentages?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Saturated fat has no measurable effect on LDL."
+        },
+        {
+          "id": "B",
+          "text": "Percent-of-energy targets are identical across all populations."
+        },
+        {
+          "id": "C",
+          "text": "One guideline must therefore be fraudulent."
+        },
+        {
+          "id": "D",
+          "text": "Targets may differ by population and clinical context, such as general prevention versus established coronary disease."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Targets may differ by population and clinical context, such as general prevention versus established coronary disease.",
+      "explanation": "Guideline targets are population-specific. Therapeutic secondary-prevention guidance may be stricter than broad population dietary guidance.",
+      "clinicalPearl": "Teach the source, year and patient population together with the number.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_2023_CCD"
+      ]
+    },
+    {
+      "id": "CVN-017",
+      "domain": "Dietary fats",
+      "subtopic": "Food pattern",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which meal best demonstrates a saturated-to-unsaturated fat substitution?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fried chicken with buttered white bread."
+        },
+        {
+          "id": "B",
+          "text": "Pastry made with shortening and cream."
+        },
+        {
+          "id": "C",
+          "text": "Grilled fish, vegetables and whole grains dressed with olive oil instead of a butter-based sauce."
+        },
+        {
+          "id": "D",
+          "text": "Coconut-cream curry with processed meat."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Grilled fish, vegetables and whole grains dressed with olive oil instead of a butter-based sauce.",
+      "explanation": "The first meal replaces solid saturated-fat sources with fish and olive oil while adding minimally processed plant foods.",
+      "clinicalPearl": "Evaluate the whole plate, not a single nutrient in isolation.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-018",
+      "domain": "Dietary fats",
+      "subtopic": "Energy density",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "Why can excessive portions of even heart-healthy oils interfere with weight reduction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plant oils provide only 2 kcal per gram."
+        },
+        {
+          "id": "B",
+          "text": "All fats provide about 9 kcal per gram."
+        },
+        {
+          "id": "C",
+          "text": "Unsaturated fat contains no calories."
+        },
+        {
+          "id": "D",
+          "text": "Only saturated fat contributes calories."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "All fats provide about 9 kcal per gram.",
+      "explanation": "MUFA and PUFA are cardiometabolically preferable to saturated fat, but all fat remains energy-dense at about 9 kcal/g.",
+      "clinicalPearl": "Quality and quantity both matter when weight loss is a goal.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-019",
+      "domain": "Dietary fats",
+      "subtopic": "Counseling",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient has LDL-C above goal and uses large amounts of ghee because it is 'traditional and natural.' What is the most appropriate dietetic approach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Recommend replacing ghee with coconut oil."
+        },
+        {
+          "id": "B",
+          "text": "Tell the patient all traditional foods are unhealthy."
+        },
+        {
+          "id": "C",
+          "text": "Respect the food culture, quantify intake, and negotiate partial replacement with unsaturated oils while improving the overall dietary pattern."
+        },
+        {
+          "id": "D",
+          "text": "Focus only on dietary cholesterol and ignore ghee."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Respect the food culture, quantify intake, and negotiate partial replacement with unsaturated oils while improving the overall dietary pattern.",
+      "explanation": "Effective counseling combines evidence-based fat substitution with culturally acceptable, sustainable changes.",
+      "clinicalPearl": "Clinical excellence includes adherence engineering, not just nutrient knowledge.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-020",
+      "domain": "Dietary fats",
+      "subtopic": "Trans fat",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which advice is strongest regarding industrial trans fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Target exactly 10% of calories from trans fat."
+        },
+        {
+          "id": "B",
+          "text": "Use trans fat instead of PUFA to improve HDL."
+        },
+        {
+          "id": "C",
+          "text": "Avoid it as much as practicable and check for partially hydrogenated oils."
+        },
+        {
+          "id": "D",
+          "text": "Trans fat is acceptable if sodium is low."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Avoid it as much as practicable and check for partially hydrogenated oils.",
+      "explanation": "Industrial trans fat has an adverse cardiovascular profile and should be avoided rather than treated as a routine calorie allowance.",
+      "clinicalPearl": "A low-sodium food is not automatically cardioprotective if its fat quality is poor.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-021",
+      "domain": "Omega-3",
+      "subtopic": "Fish intake",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "How often does the AHA recommend eating fish, particularly fatty fish, as part of a heart-healthy pattern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every meal"
+        },
+        {
+          "id": "B",
+          "text": "About 2 servings per week"
+        },
+        {
+          "id": "C",
+          "text": "Only when triglycerides exceed 1000 mg/dL"
+        },
+        {
+          "id": "D",
+          "text": "Once per month"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "About 2 servings per week",
+      "explanation": "The AHA recommends two servings of fish per week, especially fatty fish.",
+      "clinicalPearl": "Food-first omega-3 advice differs from prescribing concentrated omega-3 medication.",
+      "sourceIds": [
+        "AHA_OMEGA3"
+      ]
+    },
+    {
+      "id": "CVN-022",
+      "domain": "Omega-3",
+      "subtopic": "Serving size",
+      "difficulty": "intermediate",
+      "competency": "guideline_recall",
+      "question": "Approximately how much cooked fish counts as one AHA serving?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 oz cooked (about 28 g)"
+        },
+        {
+          "id": "B",
+          "text": "12 oz cooked (about 340 g)"
+        },
+        {
+          "id": "C",
+          "text": "6 oz cooked (about 170 g)"
+        },
+        {
+          "id": "D",
+          "text": "3 oz cooked (about 85 g)"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "3 oz cooked (about 85 g)",
+      "explanation": "A standard serving is about 3 ounces cooked, roughly 85 grams.",
+      "clinicalPearl": "Know both ounce and gram equivalents for international practice.",
+      "sourceIds": [
+        "AHA_OMEGA3"
+      ]
+    },
+    {
+      "id": "CVN-023",
+      "domain": "Omega-3",
+      "subtopic": "Food sources",
+      "difficulty": "beginner",
+      "competency": "food_source",
+      "question": "Which fish is especially rich in EPA and DHA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Egg white"
+        },
+        {
+          "id": "B",
+          "text": "Skinless chicken breast"
+        },
+        {
+          "id": "C",
+          "text": "Salmon"
+        },
+        {
+          "id": "D",
+          "text": "Tilapia"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Salmon",
+      "explanation": "Fatty fish such as salmon, sardines, mackerel and herring are rich in long-chain omega-3 fatty acids.",
+      "clinicalPearl": "Not all fish contain the same amount of EPA/DHA.",
+      "sourceIds": [
+        "AHA_OMEGA3"
+      ]
+    },
+    {
+      "id": "CVN-024",
+      "domain": "Omega-3",
+      "subtopic": "ALA",
+      "difficulty": "beginner",
+      "competency": "food_source",
+      "question": "Which food is a meaningful plant source of alpha-linolenic acid (ALA)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ground flaxseed"
+        },
+        {
+          "id": "B",
+          "text": "Butter"
+        },
+        {
+          "id": "C",
+          "text": "White rice"
+        },
+        {
+          "id": "D",
+          "text": "Chicken skin"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Ground flaxseed",
+      "explanation": "Flaxseed, chia, walnuts and some plant oils supply ALA.",
+      "clinicalPearl": "ALA is an essential omega-3 fatty acid; conversion to EPA/DHA is limited.",
+      "sourceIds": [
+        "AHA_OMEGA3"
+      ]
+    },
+    {
+      "id": "CVN-025",
+      "domain": "Omega-3",
+      "subtopic": "ALA conversion",
+      "difficulty": "intermediate",
+      "competency": "mechanism",
+      "question": "Which statement about ALA is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ALA is converted to EPA and DHA with 100% efficiency."
+        },
+        {
+          "id": "B",
+          "text": "ALA is found only in fish."
+        },
+        {
+          "id": "C",
+          "text": "ALA is a saturated fatty acid."
+        },
+        {
+          "id": "D",
+          "text": "The body can convert some ALA to EPA and DHA, but conversion is limited."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "The body can convert some ALA to EPA and DHA, but conversion is limited.",
+      "explanation": "Plant ALA contributes to omega-3 intake, but endogenous conversion to EPA and DHA is limited.",
+      "clinicalPearl": "Do not present flaxseed and salmon as nutritionally identical omega-3 sources.",
+      "sourceIds": [
+        "AHA_OMEGA3"
+      ]
+    },
+    {
+      "id": "CVN-026",
+      "domain": "Omega-3",
+      "subtopic": "Supplements",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient with coronary disease asks whether over-the-counter fish-oil capsules can replace evidence-based lipid-lowering therapy. What is the best answer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No. Supplements should not replace guideline-directed lipid-lowering therapy; indication-specific prescription therapies are a separate issue."
+        },
+        {
+          "id": "B",
+          "text": "Yes, if the capsule contains at least 100 mg of omega-3."
+        },
+        {
+          "id": "C",
+          "text": "Yes, any fish-oil supplement is equivalent to a statin."
+        },
+        {
+          "id": "D",
+          "text": "Yes, provided dietary sodium is low."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "No. Supplements should not replace guideline-directed lipid-lowering therapy; indication-specific prescription therapies are a separate issue.",
+      "explanation": "Dietary supplements are not recommended as substitutes for proven lipid-lowering therapy. Prescription omega-3 products may have specific indications under medical management.",
+      "clinicalPearl": "Separate food advice, supplements and prescription pharmacotherapy.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-027",
+      "domain": "Omega-3",
+      "subtopic": "Cooking pattern",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which meal best increases omega-3 intake without adding substantial saturated fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Baked salmon with vegetables and barley"
+        },
+        {
+          "id": "B",
+          "text": "Butter-fried paneer with cream sauce"
+        },
+        {
+          "id": "C",
+          "text": "Coconut-oil pastry"
+        },
+        {
+          "id": "D",
+          "text": "Deep-fried processed meat with fries"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Baked salmon with vegetables and barley",
+      "explanation": "Fatty fish plus vegetables and whole grains fits a heart-healthy pattern and supplies EPA/DHA.",
+      "clinicalPearl": "Preparation method can undermine an otherwise healthy protein choice.",
+      "sourceIds": [
+        "AHA_OMEGA3",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-028",
+      "domain": "Omega-3",
+      "subtopic": "Hypertriglyceridemia",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "For severe hypertriglyceridemia, which statement is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lifestyle and statin-based ASCVD risk management remain foundational; selected patients may need triglyceride-lowering pharmacotherapy under medical care."
+        },
+        {
+          "id": "B",
+          "text": "All omega-3 supplements have identical dose and evidence."
+        },
+        {
+          "id": "C",
+          "text": "Triglycerides are unrelated to pancreatitis risk."
+        },
+        {
+          "id": "D",
+          "text": "Eating two fish servings weekly is always sufficient treatment."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Lifestyle and statin-based ASCVD risk management remain foundational; selected patients may need triglyceride-lowering pharmacotherapy under medical care.",
+      "explanation": "The 2026 dyslipidemia guideline keeps lifestyle and statins central, with additional therapy for selected patients, especially when triglycerides are very high.",
+      "clinicalPearl": "Do not confuse dietary fish recommendations with therapeutic-dose prescription omega-3.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-029",
+      "domain": "Fiber",
+      "subtopic": "Cardiovascular benefit",
+      "difficulty": "beginner",
+      "competency": "mechanism",
+      "question": "Which type of fiber is particularly useful for lowering LDL-C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Soluble/viscous fiber"
+        },
+        {
+          "id": "B",
+          "text": "Trans fiber"
+        },
+        {
+          "id": "C",
+          "text": "Animal fiber"
+        },
+        {
+          "id": "D",
+          "text": "Insoluble fiber only"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Soluble/viscous fiber",
+      "explanation": "Soluble/viscous fibers can reduce intestinal cholesterol/bile-acid reabsorption and help lower LDL-C.",
+      "clinicalPearl": "Oats, barley, legumes and psyllium are practical soluble-fiber sources.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-030",
+      "domain": "Fiber",
+      "subtopic": "Food sources",
+      "difficulty": "beginner",
+      "competency": "food_source",
+      "question": "Which breakfast is most likely to provide substantial soluble fiber?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sugary soda and pastry"
+        },
+        {
+          "id": "B",
+          "text": "Butter on white toast"
+        },
+        {
+          "id": "C",
+          "text": "Oatmeal topped with berries and nuts"
+        },
+        {
+          "id": "D",
+          "text": "Processed meat alone"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Oatmeal topped with berries and nuts",
+      "explanation": "Oats contain beta-glucan, a viscous soluble fiber, and fruit adds additional fiber.",
+      "clinicalPearl": "Build fiber through intact foods, not isolated supplements alone.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-031",
+      "domain": "Fiber",
+      "subtopic": "Whole grains",
+      "difficulty": "intermediate",
+      "competency": "label_reading",
+      "question": "What is the best way to verify that a brown-colored bread is actually whole grain?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Assume brown color means whole grain."
+        },
+        {
+          "id": "B",
+          "text": "Check only the front-of-pack picture."
+        },
+        {
+          "id": "C",
+          "text": "Check that a whole grain is listed prominently in the ingredient list."
+        },
+        {
+          "id": "D",
+          "text": "Choose the product with the most sodium."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Check that a whole grain is listed prominently in the ingredient list.",
+      "explanation": "Color can come from molasses or coloring; ingredient lists provide better evidence of whole-grain content.",
+      "clinicalPearl": "Front-of-pack marketing is not a substitute for ingredient-list literacy.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-032",
+      "domain": "Fiber",
+      "subtopic": "Daily intake",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "According to AHA consumer label guidance, roughly what fiber intake range do many adults need for good health?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5–10 g/day"
+        },
+        {
+          "id": "B",
+          "text": "About 25–34 g/day"
+        },
+        {
+          "id": "C",
+          "text": "Less than 5 g/day"
+        },
+        {
+          "id": "D",
+          "text": "50–70 g/day for everyone"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "About 25–34 g/day",
+      "explanation": "AHA label guidance notes that adults generally need at least about 25–34 grams of fiber daily.",
+      "clinicalPearl": "Individual requirements vary with age, sex, energy intake and clinical context.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-033",
+      "domain": "Fiber",
+      "subtopic": "Weight management",
+      "difficulty": "intermediate",
+      "competency": "mechanism",
+      "question": "How can high-fiber foods support weight reduction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They often increase satiety and lower dietary energy density."
+        },
+        {
+          "id": "B",
+          "text": "Fiber automatically blocks all fat absorption."
+        },
+        {
+          "id": "C",
+          "text": "They eliminate the need for calorie balance."
+        },
+        {
+          "id": "D",
+          "text": "Fiber provides 9 kcal per gram."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "They often increase satiety and lower dietary energy density.",
+      "explanation": "Fiber-rich foods can improve fullness and often displace more energy-dense foods.",
+      "clinicalPearl": "Fiber helps, but weight loss still depends on sustained energy balance.",
+      "sourceIds": [
+        "AHA_LABELS",
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-034",
+      "domain": "Fiber",
+      "subtopic": "Clinical counseling",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "A patient increases fiber from 10 g/day to 35 g/day overnight and develops bloating. What is the best advice?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Double fiber again tomorrow."
+        },
+        {
+          "id": "B",
+          "text": "Stop all fiber permanently."
+        },
+        {
+          "id": "C",
+          "text": "Add more processed meat."
+        },
+        {
+          "id": "D",
+          "text": "Increase fiber more gradually and ensure appropriate fluid intake unless fluid is restricted."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Increase fiber more gradually and ensure appropriate fluid intake unless fluid is restricted.",
+      "explanation": "Rapid increases in fiber may cause GI symptoms. Gradual titration and adequate fluid are often better tolerated, while respecting any prescribed fluid restriction.",
+      "clinicalPearl": "Fiber counseling must consider GI tolerance and comorbid heart failure.",
+      "sourceIds": [
+        "AHA_LABELS",
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-035",
+      "domain": "Fiber",
+      "subtopic": "Legumes",
+      "difficulty": "beginner",
+      "competency": "food_choice",
+      "question": "Why are legumes useful in cardiovascular nutrition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They are always high in sodium even when cooked without salt."
+        },
+        {
+          "id": "B",
+          "text": "They are naturally rich in trans fat."
+        },
+        {
+          "id": "C",
+          "text": "They contain no carbohydrate."
+        },
+        {
+          "id": "D",
+          "text": "They provide fiber and plant protein with little saturated fat."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "They provide fiber and plant protein with little saturated fat.",
+      "explanation": "Beans, lentils and peas combine fiber, minerals and plant protein and can replace higher-saturated-fat protein sources.",
+      "clinicalPearl": "Canned legumes can be rinsed and lower-sodium versions chosen.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-036",
+      "domain": "Fiber",
+      "subtopic": "Label interpretation",
+      "difficulty": "advanced",
+      "competency": "label_reading",
+      "question": "On a Nutrition Facts label, which % Daily Value convention generally indicates a nutrient is high per serving?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20% DV or more"
+        },
+        {
+          "id": "B",
+          "text": "Exactly 10% DV only"
+        },
+        {
+          "id": "C",
+          "text": "5% DV or less"
+        },
+        {
+          "id": "D",
+          "text": "1% DV or less"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "20% DV or more",
+      "explanation": "A common label rule of thumb is 5% DV or less is low and 20% DV or more is high.",
+      "clinicalPearl": "Use %DV to compare similar products quickly, especially fiber, sodium and saturated fat.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-037",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Sodium",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "What is the AHA upper sodium limit commonly recommended for most adults?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No more than 2,300 mg/day"
+        },
+        {
+          "id": "B",
+          "text": "5,000 mg/day"
+        },
+        {
+          "id": "C",
+          "text": "500 mg/day for everyone"
+        },
+        {
+          "id": "D",
+          "text": "10,000 mg/day"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "No more than 2,300 mg/day",
+      "explanation": "AHA guidance recommends no more than 2,300 mg sodium daily, with an ideal goal of about 1,500 mg for many adults, especially for blood-pressure lowering.",
+      "clinicalPearl": "Always distinguish sodium from salt.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-038",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Sodium",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "What sodium target can lower blood pressure further within the DASH framework?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7,500 mg/day"
+        },
+        {
+          "id": "B",
+          "text": "3,500 mg/day"
+        },
+        {
+          "id": "C",
+          "text": "1,500 mg/day"
+        },
+        {
+          "id": "D",
+          "text": "5,000 mg/day"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "1,500 mg/day",
+      "explanation": "NHLBI DASH materials note that 1,500 mg/day can lower blood pressure further than 2,300 mg/day.",
+      "clinicalPearl": "A stricter sodium target should still be individualized for clinical status and adherence.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-039",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Salt conversion",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "WHO's limit of less than 2 g sodium per day is approximately equivalent to how much salt (sodium chloride)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Less than 1 g salt/day"
+        },
+        {
+          "id": "B",
+          "text": "Less than 5 g salt/day"
+        },
+        {
+          "id": "C",
+          "text": "Less than 10 g salt/day"
+        },
+        {
+          "id": "D",
+          "text": "Less than 20 g salt/day"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Less than 5 g salt/day",
+      "explanation": "Sodium is about 39–40% of sodium chloride by weight, so 2 g sodium is approximately 5 g salt.",
+      "clinicalPearl": "Patients often confuse 'sodium' and 'salt'; dietitians should be fluent in both units.",
+      "sourceIds": [
+        "WHO_SODIUM"
+      ]
+    },
+    {
+      "id": "CVN-040",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Hidden sodium",
+      "difficulty": "beginner",
+      "competency": "food_choice",
+      "question": "Where does most dietary sodium commonly come from in modern food environments?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fresh fruit"
+        },
+        {
+          "id": "B",
+          "text": "Plain unsalted oats"
+        },
+        {
+          "id": "C",
+          "text": "The sodium naturally present in drinking water alone"
+        },
+        {
+          "id": "D",
+          "text": "Packaged, prepared and restaurant foods"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Packaged, prepared and restaurant foods",
+      "explanation": "A large share of sodium comes from processed, prepared and restaurant foods rather than only from the salt shaker.",
+      "clinicalPearl": "Sodium counseling must include labels, condiments, breads, sauces and restaurant meals.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-041",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Label math",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "A soup contains 680 mg sodium per serving and the patient eats 2 servings. How much sodium did they consume?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2,300 mg"
+        },
+        {
+          "id": "B",
+          "text": "1,360 mg"
+        },
+        {
+          "id": "C",
+          "text": "680 mg"
+        },
+        {
+          "id": "D",
+          "text": "3,400 mg"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "1,360 mg",
+      "explanation": "680 × 2 = 1,360 mg sodium.",
+      "clinicalPearl": "Serving-size math is one of the highest-yield practical skills in sodium counseling.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-042",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Label comparison",
+      "difficulty": "intermediate",
+      "competency": "label_reading",
+      "question": "Two breads are nutritionally similar except Bread A has 80 mg sodium/slice and Bread B has 190 mg/slice. For a patient reducing sodium, which is preferable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They are always equivalent"
+        },
+        {
+          "id": "B",
+          "text": "Bread B"
+        },
+        {
+          "id": "C",
+          "text": "Choose only by package color"
+        },
+        {
+          "id": "D",
+          "text": "Bread A"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Bread A",
+      "explanation": "When other factors are comparable, the lower-sodium product helps reduce cumulative daily sodium.",
+      "clinicalPearl": "Frequently eaten foods can make large contributions even when they do not taste very salty.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-043",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH pattern",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "DASH stands for:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dietary Allocation for Sodium and Hydration"
+        },
+        {
+          "id": "B",
+          "text": "Dietary Algorithm for Stroke Hospitalization"
+        },
+        {
+          "id": "C",
+          "text": "Dietary Approaches to Stop Hypertension"
+        },
+        {
+          "id": "D",
+          "text": "Daily Approach to Saturated-fat Handling"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Dietary Approaches to Stop Hypertension",
+      "explanation": "DASH is the Dietary Approaches to Stop Hypertension eating pattern.",
+      "clinicalPearl": "Know the acronym, but more importantly know the actual food pattern.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-044",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH pattern",
+      "difficulty": "beginner",
+      "competency": "food_pattern",
+      "question": "Which pattern best describes DASH?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High in processed meat, refined grains and salty snacks."
+        },
+        {
+          "id": "B",
+          "text": "High in vegetables, fruits, whole grains, legumes/nuts and low-fat dairy, with lower sodium and saturated fat."
+        },
+        {
+          "id": "C",
+          "text": "Ketogenic by definition."
+        },
+        {
+          "id": "D",
+          "text": "A juice-only diet."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "High in vegetables, fruits, whole grains, legumes/nuts and low-fat dairy, with lower sodium and saturated fat.",
+      "explanation": "DASH emphasizes plant foods, low-fat dairy, lean proteins and lower sodium/saturated fat.",
+      "clinicalPearl": "DASH is a food pattern, not merely a sodium restriction.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-045",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH servings",
+      "difficulty": "intermediate",
+      "competency": "guideline_recall",
+      "question": "In a 2,000-kcal DASH pattern, approximately how many vegetable servings are recommended per day?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4–5 servings"
+        },
+        {
+          "id": "B",
+          "text": "0–1 serving"
+        },
+        {
+          "id": "C",
+          "text": "1–2 servings"
+        },
+        {
+          "id": "D",
+          "text": "10–12 servings for everyone"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "4–5 servings",
+      "explanation": "The standard 2,000-kcal DASH example includes about 4–5 vegetable servings daily.",
+      "clinicalPearl": "Serving targets change with calorie needs; know the reference pattern and how to adapt it.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-046",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH servings",
+      "difficulty": "intermediate",
+      "competency": "guideline_recall",
+      "question": "In a 2,000-kcal DASH pattern, approximately how many fruit servings are recommended per day?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0–1 serving"
+        },
+        {
+          "id": "B",
+          "text": "9–10 servings"
+        },
+        {
+          "id": "C",
+          "text": "4–5 servings"
+        },
+        {
+          "id": "D",
+          "text": "1 serving"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "4–5 servings",
+      "explanation": "The standard 2,000-kcal DASH example includes about 4–5 fruit servings daily.",
+      "clinicalPearl": "Whole fruit is generally preferred over sweetened fruit products.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-047",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH servings",
+      "difficulty": "intermediate",
+      "competency": "guideline_recall",
+      "question": "In a 2,000-kcal DASH pattern, low-fat or fat-free dairy is typically:",
+      "options": [
+        {
+          "id": "A",
+          "text": "0 servings in all patients"
+        },
+        {
+          "id": "B",
+          "text": "Only 1 serving per week"
+        },
+        {
+          "id": "C",
+          "text": "2–3 servings/day"
+        },
+        {
+          "id": "D",
+          "text": "8–10 servings/day"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "2–3 servings/day",
+      "explanation": "NHLBI's 2,000-kcal DASH example includes 2–3 daily servings of low-fat or fat-free dairy.",
+      "clinicalPearl": "Adapt for lactose intolerance, allergy, vegan preference and overall nutrient adequacy.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-048",
+      "domain": "Hypertension & DASH",
+      "subtopic": "DASH servings",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "In a 2,000-kcal DASH pattern, nuts, seeds and dry beans/peas are typically recommended:",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 4–5 servings per week"
+        },
+        {
+          "id": "B",
+          "text": "4–5 servings every meal"
+        },
+        {
+          "id": "C",
+          "text": "Never"
+        },
+        {
+          "id": "D",
+          "text": "Exactly 1 serving per month"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "About 4–5 servings per week",
+      "explanation": "The standard DASH pattern uses several servings of nuts, seeds and legumes each week.",
+      "clinicalPearl": "Weekly food-group targets are easy to forget and worth drilling in a mastery app.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-049",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Potassium",
+      "difficulty": "intermediate",
+      "competency": "mechanism",
+      "question": "How can higher dietary potassium help blood pressure in appropriate patients?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It always causes sodium retention."
+        },
+        {
+          "id": "B",
+          "text": "It raises blood pressure by constricting vessels."
+        },
+        {
+          "id": "C",
+          "text": "It has no relationship to sodium handling."
+        },
+        {
+          "id": "D",
+          "text": "It can blunt sodium's effects and promote sodium excretion while supporting vascular relaxation."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "It can blunt sodium's effects and promote sodium excretion while supporting vascular relaxation.",
+      "explanation": "Potassium-rich diets can support blood-pressure reduction through renal sodium handling and vascular effects.",
+      "clinicalPearl": "Food-based potassium is valuable, but safety depends on kidney function and medications.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-050",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Potassium safety",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which patient needs the most caution before intentionally increasing potassium or using a potassium-based salt substitute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A patient with chronic kidney disease taking a potassium-raising medication"
+        },
+        {
+          "id": "B",
+          "text": "A patient eating too few vegetables"
+        },
+        {
+          "id": "C",
+          "text": "A healthy runner with normal labs"
+        },
+        {
+          "id": "D",
+          "text": "A healthy adult with normal kidney function"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "A patient with chronic kidney disease taking a potassium-raising medication",
+      "explanation": "Kidney disease and medications such as RAAS inhibitors or potassium-sparing agents can increase hyperkalemia risk.",
+      "clinicalPearl": "Never give blanket 'eat more potassium' advice without screening for contraindications.",
+      "sourceIds": [
+        "AHA_2025_HTN",
+        "WHO_SODIUM"
+      ]
+    },
+    {
+      "id": "CVN-051",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Potassium",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "For otherwise appropriate adults with elevated or high blood pressure, AHA educational guidance commonly cites what dietary potassium range?",
+      "options": [
+        {
+          "id": "A",
+          "text": "500–1,000 mg/day"
+        },
+        {
+          "id": "B",
+          "text": "Potassium should always be minimized"
+        },
+        {
+          "id": "C",
+          "text": "10,000–15,000 mg/day for everyone"
+        },
+        {
+          "id": "D",
+          "text": "About 3,500–5,000 mg/day, ideally from foods"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "About 3,500–5,000 mg/day, ideally from foods",
+      "explanation": "AHA hypertension materials cite roughly 3,500–5,000 mg/day from dietary sources for appropriate adults, with clinical caution where potassium handling is impaired.",
+      "clinicalPearl": "This is not a universal prescription for CKD, hyperkalemia or potassium-raising medications.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-052",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Blood pressure classification",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "Under the 2025 AHA/ACC framework, which blood pressure is classified as stage 1 hypertension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "116/74 mm Hg"
+        },
+        {
+          "id": "B",
+          "text": "118/79 mm Hg"
+        },
+        {
+          "id": "C",
+          "text": "124/76 mm Hg"
+        },
+        {
+          "id": "D",
+          "text": "132/84 mm Hg"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "132/84 mm Hg",
+      "explanation": "Stage 1 hypertension is systolic 130–139 mm Hg or diastolic 80–89 mm Hg.",
+      "clinicalPearl": "Dietitians should recognize BP categories because nutrition counseling intensity depends on risk and treatment context.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-053",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Blood pressure classification",
+      "difficulty": "intermediate",
+      "competency": "guideline_recall",
+      "question": "Under the 2025 AHA/ACC framework, stage 2 hypertension begins at:",
+      "options": [
+        {
+          "id": "A",
+          "text": "≥120 systolic only"
+        },
+        {
+          "id": "B",
+          "text": "≥160/100 only"
+        },
+        {
+          "id": "C",
+          "text": "≥140 systolic or ≥90 diastolic mm Hg"
+        },
+        {
+          "id": "D",
+          "text": "≥130 systolic only regardless of diastolic"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "≥140 systolic or ≥90 diastolic mm Hg",
+      "explanation": "Stage 2 hypertension is defined as systolic ≥140 or diastolic ≥90 mm Hg.",
+      "clinicalPearl": "Use the higher category when systolic and diastolic fall into different categories.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-054",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Lifestyle",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which package of lifestyle changes is most consistent with current hypertension guidance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only avoid dietary cholesterol."
+        },
+        {
+          "id": "B",
+          "text": "DASH-style eating, sodium reduction, adequate dietary potassium when safe, healthy weight, physical activity and less/no alcohol."
+        },
+        {
+          "id": "C",
+          "text": "Only eliminate caffeine."
+        },
+        {
+          "id": "D",
+          "text": "Only increase protein."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "DASH-style eating, sodium reduction, adequate dietary potassium when safe, healthy weight, physical activity and less/no alcohol.",
+      "explanation": "Hypertension nutrition is multimodal; sodium reduction is important but not the sole intervention.",
+      "clinicalPearl": "A mastery quiz should test combined intervention planning, not isolated facts.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-055",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Sodium reduction",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "For many adults, reducing sodium intake by approximately how much per day can improve blood pressure even if the ideal target is not reached?",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 50 mg/day"
+        },
+        {
+          "id": "B",
+          "text": "About 5,000 mg/day"
+        },
+        {
+          "id": "C",
+          "text": "About 1,000 mg/day"
+        },
+        {
+          "id": "D",
+          "text": "No reduction is useful unless sodium reaches zero"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "About 1,000 mg/day",
+      "explanation": "A reduction of around 1,000 mg/day can improve BP and may be more achievable than an immediate jump to an ideal target.",
+      "clinicalPearl": "Use stepped goals when adherence is the barrier.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-056",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Salt substitute",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A hypertensive patient wants to use potassium chloride salt substitute. What should the dietitian check first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kidney function, serum potassium and medications affecting potassium balance"
+        },
+        {
+          "id": "B",
+          "text": "Hair color"
+        },
+        {
+          "id": "C",
+          "text": "Vitamin C intake only"
+        },
+        {
+          "id": "D",
+          "text": "Whether the patient eats breakfast"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Kidney function, serum potassium and medications affecting potassium balance",
+      "explanation": "Potassium-containing salt substitutes can be useful for some adults but may be unsafe in patients at risk of hyperkalemia.",
+      "clinicalPearl": "A 'lower sodium' product can still require clinical screening.",
+      "sourceIds": [
+        "WHO_SODIUM",
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-057",
+      "domain": "Hypertension & DASH",
+      "subtopic": "Restaurant sodium",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which strategy is most useful for reducing sodium when eating out?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Request sauces/dressings on the side, choose minimally processed dishes, and avoid heavily cured or salted items."
+        },
+        {
+          "id": "B",
+          "text": "Add soy sauce before tasting."
+        },
+        {
+          "id": "C",
+          "text": "Assume restaurant food is low-sodium unless it tastes salty."
+        },
+        {
+          "id": "D",
+          "text": "Choose soup and processed meat at every meal."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Request sauces/dressings on the side, choose minimally processed dishes, and avoid heavily cured or salted items.",
+      "explanation": "Restaurant sauces, soups, cured foods and prepared dishes can contain large sodium loads.",
+      "clinicalPearl": "Taste is an unreliable measure of sodium content.",
+      "sourceIds": [
+        "NHLBI_DASH"
+      ]
+    },
+    {
+      "id": "CVN-058",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Added sugar",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "The AHA recommends keeping added sugars to approximately what share of calories or less?",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 25% of calories"
+        },
+        {
+          "id": "B",
+          "text": "There is no reason to limit added sugar"
+        },
+        {
+          "id": "C",
+          "text": "About 40% of calories"
+        },
+        {
+          "id": "D",
+          "text": "About 6% of calories"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "About 6% of calories",
+      "explanation": "AHA consumer guidance recommends limiting added sugars to about 6% of daily calories.",
+      "clinicalPearl": "Distinguish added sugars from naturally occurring sugars in intact fruit and plain milk.",
+      "sourceIds": [
+        "AHA_SUGAR"
+      ]
+    },
+    {
+      "id": "CVN-059",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Added sugar",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "What is the AHA's commonly cited daily added-sugar limit for most women?",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 5 g"
+        },
+        {
+          "id": "B",
+          "text": "About 25 g (6 teaspoons)"
+        },
+        {
+          "id": "C",
+          "text": "About 75 g"
+        },
+        {
+          "id": "D",
+          "text": "About 125 g"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "About 25 g (6 teaspoons)",
+      "explanation": "AHA guidance commonly cites no more than about 25 g or 6 teaspoons of added sugar daily for women.",
+      "clinicalPearl": "Use gram-to-teaspoon conversion during label counseling: roughly 4 g sugar per teaspoon.",
+      "sourceIds": [
+        "AHA_SUGAR"
+      ]
+    },
+    {
+      "id": "CVN-060",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Added sugar",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "What is the AHA's commonly cited daily added-sugar limit for most men?",
+      "options": [
+        {
+          "id": "A",
+          "text": "About 36 g (9 teaspoons)"
+        },
+        {
+          "id": "B",
+          "text": "About 9 g"
+        },
+        {
+          "id": "C",
+          "text": "About 60 g"
+        },
+        {
+          "id": "D",
+          "text": "About 100 g"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "About 36 g (9 teaspoons)",
+      "explanation": "AHA guidance commonly cites no more than about 36 g or 9 teaspoons of added sugar daily for men.",
+      "clinicalPearl": "These are practical public-facing limits; individualized energy needs still matter.",
+      "sourceIds": [
+        "AHA_SUGAR"
+      ]
+    },
+    {
+      "id": "CVN-061",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Added sugar",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "A drink contains 32 g added sugar. Approximately how many teaspoons of added sugar is that?",
+      "options": [
+        {
+          "id": "A",
+          "text": "16 teaspoons"
+        },
+        {
+          "id": "B",
+          "text": "4 teaspoons"
+        },
+        {
+          "id": "C",
+          "text": "2 teaspoons"
+        },
+        {
+          "id": "D",
+          "text": "8 teaspoons"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "8 teaspoons",
+      "explanation": "One teaspoon of sugar is approximately 4 g; 32 ÷ 4 = 8 teaspoons.",
+      "clinicalPearl": "Converting grams to teaspoons can make counseling more tangible.",
+      "sourceIds": [
+        "AHA_SUGAR"
+      ]
+    },
+    {
+      "id": "CVN-062",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Added sugar",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which is usually the better cardiovascular choice?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sugar-sweetened fruit drink"
+        },
+        {
+          "id": "B",
+          "text": "Candy marketed as fruit snacks"
+        },
+        {
+          "id": "C",
+          "text": "Regular soda"
+        },
+        {
+          "id": "D",
+          "text": "Whole fruit"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Whole fruit",
+      "explanation": "Whole fruit provides fiber and micronutrients without the concentrated added sugar load of sweetened beverages.",
+      "clinicalPearl": "Do not conflate whole fruit with sugar-sweetened fruit-flavored drinks.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-063",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Dietary cholesterol",
+      "difficulty": "intermediate",
+      "competency": "guideline_interpretation",
+      "question": "What is the best current interpretation of dietary cholesterol in cardiovascular prevention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only dietary cholesterol matters; saturated fat is irrelevant."
+        },
+        {
+          "id": "B",
+          "text": "Dietary cholesterol has no biological effect in any person."
+        },
+        {
+          "id": "C",
+          "text": "For most people it is not the primary dietary target; overall dietary pattern and saturated-fat replacement are more important."
+        },
+        {
+          "id": "D",
+          "text": "Everyone must stay below exactly 100 mg/day."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "For most people it is not the primary dietary target; overall dietary pattern and saturated-fat replacement are more important.",
+      "explanation": "The 2026 AHA dietary statement notes that dietary cholesterol is no longer a primary target for most people within an overall heart-healthy pattern.",
+      "clinicalPearl": "Do not turn 'not primary target' into 'unlimited intake'.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-064",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Eggs",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which counseling approach is most evidence-aligned for eggs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Focus only on egg color and size."
+        },
+        {
+          "id": "B",
+          "text": "Consider eggs within the whole dietary pattern, especially the patient's LDL-C, saturated-fat intake and foods eaten with the eggs."
+        },
+        {
+          "id": "C",
+          "text": "Encourage unlimited eggs because dietary cholesterol never matters."
+        },
+        {
+          "id": "D",
+          "text": "Ban eggs in every patient."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Consider eggs within the whole dietary pattern, especially the patient's LDL-C, saturated-fat intake and foods eaten with the eggs.",
+      "explanation": "Eggs contain cholesterol but relatively little saturated fat compared with foods such as bacon, butter or sausage often eaten alongside them. Context matters.",
+      "clinicalPearl": "Pattern-based counseling is more accurate than single-food moralizing.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-065",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Label reading",
+      "difficulty": "beginner",
+      "competency": "label_reading",
+      "question": "Which nutrients should a cardiovascular dietitian commonly compare across packaged foods?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only vitamin C"
+        },
+        {
+          "id": "B",
+          "text": "Only protein"
+        },
+        {
+          "id": "C",
+          "text": "Only total carbohydrate"
+        },
+        {
+          "id": "D",
+          "text": "Sodium, saturated fat, added sugar, trans-fat clues and fiber"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Sodium, saturated fat, added sugar, trans-fat clues and fiber",
+      "explanation": "These label elements are directly useful for heart-healthy food selection.",
+      "clinicalPearl": "Per-serving values are meaningless unless the actual portion is also considered.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-066",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Label reading",
+      "difficulty": "intermediate",
+      "competency": "label_reading",
+      "question": "If a nutrient provides 5% Daily Value or less per serving, it is generally considered:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toxic"
+        },
+        {
+          "id": "B",
+          "text": "High"
+        },
+        {
+          "id": "C",
+          "text": "Unmeasurable"
+        },
+        {
+          "id": "D",
+          "text": "Low"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Low",
+      "explanation": "The common Nutrition Facts rule of thumb is 5% DV or less is low and 20% DV or more is high.",
+      "clinicalPearl": "This heuristic is useful for sodium and saturated fat comparisons.",
+      "sourceIds": [
+        "AHA_LABELS"
+      ]
+    },
+    {
+      "id": "CVN-067",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Ultra-processed foods",
+      "difficulty": "intermediate",
+      "competency": "food_pattern",
+      "question": "Which change is most aligned with the 2026 AHA dietary guidance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase sugary beverages while reducing water."
+        },
+        {
+          "id": "B",
+          "text": "Choose minimally processed foods more often in place of ultraprocessed foods."
+        },
+        {
+          "id": "C",
+          "text": "Replace vegetables with packaged snack foods."
+        },
+        {
+          "id": "D",
+          "text": "Choose processed meat because it is high in protein."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Choose minimally processed foods more often in place of ultraprocessed foods.",
+      "explanation": "The 2026 AHA guidance explicitly favors minimally processed over ultraprocessed foods within the heart-healthy pattern.",
+      "clinicalPearl": "Processing level is not the only criterion, but it often clusters with sodium, refined starch, added sugar and unhealthy fat.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-068",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Alcohol",
+      "difficulty": "advanced",
+      "competency": "guideline_interpretation",
+      "question": "What is the most appropriate cardiovascular advice for a person who does not drink alcohol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Do not start drinking for presumed heart benefit."
+        },
+        {
+          "id": "B",
+          "text": "Drink only on an empty stomach."
+        },
+        {
+          "id": "C",
+          "text": "Start spirits because they contain no fat."
+        },
+        {
+          "id": "D",
+          "text": "Start red wine daily for cardioprotection."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Do not start drinking for presumed heart benefit.",
+      "explanation": "Current AHA guidance does not recommend initiating alcohol for cardiovascular benefit.",
+      "clinicalPearl": "Observational associations are not a reason to prescribe alcohol.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-069",
+      "domain": "Sugar, cholesterol & labels",
+      "subtopic": "Sugar-sweetened beverages",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "For a patient with obesity, high triglycerides and hypertension, which beverage change has the broadest cardiometabolic benefit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replace sugar-sweetened beverages with water or unsweetened beverages."
+        },
+        {
+          "id": "B",
+          "text": "Add sugar to tea for energy."
+        },
+        {
+          "id": "C",
+          "text": "Replace water with fruit drink."
+        },
+        {
+          "id": "D",
+          "text": "Use regular soda but only with meals."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Replace sugar-sweetened beverages with water or unsweetened beverages.",
+      "explanation": "Reducing sugar-sweetened beverages lowers added sugar and energy intake and may help weight and triglyceride management.",
+      "clinicalPearl": "Beverage calories are often an efficient first target.",
+      "sourceIds": [
+        "AHA_SUGAR",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-070",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Core pattern",
+      "difficulty": "beginner",
+      "competency": "food_pattern",
+      "question": "Which fat is a defining primary fat source in a Mediterranean-style diet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Butter"
+        },
+        {
+          "id": "B",
+          "text": "Olive oil"
+        },
+        {
+          "id": "C",
+          "text": "Shortening"
+        },
+        {
+          "id": "D",
+          "text": "Coconut cream"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Olive oil",
+      "explanation": "Mediterranean-style eating uses olive oil as a central fat source.",
+      "clinicalPearl": "The pattern matters more than adding olive oil to an otherwise poor diet.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-071",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Protein",
+      "difficulty": "beginner",
+      "competency": "food_pattern",
+      "question": "Which protein pattern best fits Mediterranean-style eating?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Processed meat at most meals"
+        },
+        {
+          "id": "B",
+          "text": "Frequent legumes and fish, with poultry more often than red/processed meat"
+        },
+        {
+          "id": "C",
+          "text": "Only protein powders"
+        },
+        {
+          "id": "D",
+          "text": "No plant protein"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Frequent legumes and fish, with poultry more often than red/processed meat",
+      "explanation": "Mediterranean patterns emphasize plant foods, fish/seafood and lower amounts of red and processed meat.",
+      "clinicalPearl": "Protein source quality is a major cardiovascular lever.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-072",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Dessert",
+      "difficulty": "beginner",
+      "competency": "food_choice",
+      "question": "Which dessert is most characteristic of a Mediterranean-style pattern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fresh fruit"
+        },
+        {
+          "id": "B",
+          "text": "Frosted doughnut"
+        },
+        {
+          "id": "C",
+          "text": "Deep-fried pastry with shortening"
+        },
+        {
+          "id": "D",
+          "text": "Large sugary soda"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Fresh fruit",
+      "explanation": "Fruit is commonly used as dessert in Mediterranean-style eating, reducing added sugar and refined-food exposure.",
+      "clinicalPearl": "A healthy pattern can satisfy sweetness without making added sugar the default.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-073",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Whole grains",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which grain choice best fits both Mediterranean and AHA heart-healthy guidance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Refined white bread with butter"
+        },
+        {
+          "id": "B",
+          "text": "Fried refined-flour snack"
+        },
+        {
+          "id": "C",
+          "text": "Barley or other intact whole grain"
+        },
+        {
+          "id": "D",
+          "text": "Sugar-coated cereal"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Barley or other intact whole grain",
+      "explanation": "Whole grains are a core feature of heart-healthy dietary patterns.",
+      "clinicalPearl": "Whole-grain quality can be assessed by ingredient list and fiber content.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-074",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Nuts",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "For a patient who needs a heart-healthy snack and has no nut allergy, which is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sugary soda"
+        },
+        {
+          "id": "B",
+          "text": "Butter cookies"
+        },
+        {
+          "id": "C",
+          "text": "Salted processed meat"
+        },
+        {
+          "id": "D",
+          "text": "A small portion of unsalted nuts"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "A small portion of unsalted nuts",
+      "explanation": "Nuts supply unsaturated fats, fiber and plant protein; unsalted versions avoid extra sodium.",
+      "clinicalPearl": "Portion awareness matters because nuts are energy-dense.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-075",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Alcohol",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Wine is sometimes associated with Mediterranean eating. How should a dietitian counsel a non-drinker?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Do not recommend starting alcohol; the dietary pattern can be followed without wine."
+        },
+        {
+          "id": "B",
+          "text": "Replace fruit with wine."
+        },
+        {
+          "id": "C",
+          "text": "Wine is mandatory for cardiovascular benefit."
+        },
+        {
+          "id": "D",
+          "text": "Recommend two glasses with every meal."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Do not recommend starting alcohol; the dietary pattern can be followed without wine.",
+      "explanation": "Current AHA guidance is clear that people who do not drink should not start for heart health.",
+      "clinicalPearl": "Mediterranean diet ≠ alcohol prescription.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-076",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Pattern comparison",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "What do DASH and Mediterranean-style diets strongly share?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mandatory ketogenic macronutrient ratios"
+        },
+        {
+          "id": "B",
+          "text": "High trans-fat intake"
+        },
+        {
+          "id": "C",
+          "text": "High processed-meat intake"
+        },
+        {
+          "id": "D",
+          "text": "Emphasis on vegetables, fruits, whole grains, legumes/nuts and healthier fat/protein sources"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Emphasis on vegetables, fruits, whole grains, legumes/nuts and healthier fat/protein sources",
+      "explanation": "Both are plant-forward dietary patterns with strong overlap in foods associated with cardiovascular benefit.",
+      "clinicalPearl": "Teach common principles first, then the distinctive features of each pattern.",
+      "sourceIds": [
+        "NHLBI_DASH",
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-077",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Personalization",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A South Asian patient dislikes olives and asks whether a Mediterranean-style pattern is impossible. What is the best response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, the diet cannot be adapted culturally."
+        },
+        {
+          "id": "B",
+          "text": "Yes, olives are mandatory at every meal."
+        },
+        {
+          "id": "C",
+          "text": "No. The principles can be translated using culturally familiar vegetables, legumes, whole grains, nuts, fish and unsaturated plant oils."
+        },
+        {
+          "id": "D",
+          "text": "Yes, only foods from Mediterranean countries count."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "No. The principles can be translated using culturally familiar vegetables, legumes, whole grains, nuts, fish and unsaturated plant oils.",
+      "explanation": "Heart-healthy dietary patterns should be flexible enough to accommodate cultural and religious preferences.",
+      "clinicalPearl": "Mastery means understanding the pattern's principles, not copying a cuisine literally.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-078",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Plant proteins",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which substitution best fits a Mediterranean-style cardioprotective pattern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Replace fish with butter."
+        },
+        {
+          "id": "B",
+          "text": "Replace some processed meat meals with lentils or beans."
+        },
+        {
+          "id": "C",
+          "text": "Replace vegetables with sweetened cereal."
+        },
+        {
+          "id": "D",
+          "text": "Replace beans with bacon."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Replace some processed meat meals with lentils or beans.",
+      "explanation": "Legumes can displace processed meat while adding fiber and plant protein.",
+      "clinicalPearl": "Substitution questions are more clinically meaningful than isolated 'good food/bad food' questions.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN"
+      ]
+    },
+    {
+      "id": "CVN-079",
+      "domain": "Mediterranean pattern",
+      "subtopic": "Pattern quality",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which patient is following the Mediterranean pattern most faithfully?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One who adds olive oil to a diet dominated by processed meat and sweets."
+        },
+        {
+          "id": "B",
+          "text": "One who drinks wine daily but rarely eats vegetables."
+        },
+        {
+          "id": "C",
+          "text": "One whose overall diet is rich in plants, whole grains, legumes, nuts, fish and olive oil with limited highly processed foods."
+        },
+        {
+          "id": "D",
+          "text": "One who eats only pasta and cheese."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "One whose overall diet is rich in plants, whole grains, legumes, nuts, fish and olive oil with limited highly processed foods.",
+      "explanation": "Mediterranean eating is an overall dietary pattern, not a single food, oil or beverage.",
+      "clinicalPearl": "Avoid reducing evidence-based dietary patterns to one 'hero' ingredient.",
+      "sourceIds": [
+        "AHA_MEDITERRANEAN",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-080",
+      "domain": "Dyslipidemia",
+      "subtopic": "LDL-C",
+      "difficulty": "beginner",
+      "competency": "mechanism",
+      "question": "Which lipoprotein is a primary causal target in atherosclerotic cardiovascular disease prevention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hemoglobin"
+        },
+        {
+          "id": "B",
+          "text": "Albumin"
+        },
+        {
+          "id": "C",
+          "text": "LDL-C and other apoB-containing atherogenic lipoproteins"
+        },
+        {
+          "id": "D",
+          "text": "HDL-C alone"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "LDL-C and other apoB-containing atherogenic lipoproteins",
+      "explanation": "Atherogenic apoB-containing particles, including LDL, drive atherosclerotic risk.",
+      "clinicalPearl": "Modern lipid management extends beyond total cholesterol.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-081",
+      "domain": "Dyslipidemia",
+      "subtopic": "Secondary prevention",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "Under the 2026 ACC/AHA dyslipidemia guideline, what LDL-C goal is recommended for many very-high-risk secondary-prevention patients?",
+      "options": [
+        {
+          "id": "A",
+          "text": "<130 mg/dL"
+        },
+        {
+          "id": "B",
+          "text": "<160 mg/dL"
+        },
+        {
+          "id": "C",
+          "text": "<200 mg/dL"
+        },
+        {
+          "id": "D",
+          "text": "<55 mg/dL"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "<55 mg/dL",
+      "explanation": "The 2026 guideline recommends an LDL-C goal below 55 mg/dL for secondary-prevention patients at very high risk.",
+      "clinicalPearl": "Know whether a number is a treatment goal, diagnostic threshold or risk-enhancing level.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-082",
+      "domain": "Dyslipidemia",
+      "subtopic": "Non-HDL-C",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "For very-high-risk secondary prevention, what non-HDL-C goal accompanies LDL-C <55 mg/dL in the 2026 guideline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "<85 mg/dL"
+        },
+        {
+          "id": "B",
+          "text": "<130 mg/dL"
+        },
+        {
+          "id": "C",
+          "text": "<190 mg/dL"
+        },
+        {
+          "id": "D",
+          "text": "<40 mg/dL"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "<85 mg/dL",
+      "explanation": "The 2026 guideline pairs LDL-C <55 mg/dL with non-HDL-C <85 mg/dL in very-high-risk secondary prevention.",
+      "clinicalPearl": "Non-HDL-C captures cholesterol in all atherogenic apoB-containing particles.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-083",
+      "domain": "Dyslipidemia",
+      "subtopic": "Lp(a)",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "How often should lipoprotein(a), Lp(a), generally be measured in adults according to the 2026 dyslipidemia guideline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every day"
+        },
+        {
+          "id": "B",
+          "text": "Never"
+        },
+        {
+          "id": "C",
+          "text": "Only after age 90"
+        },
+        {
+          "id": "D",
+          "text": "At least once in a lifetime"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "At least once in a lifetime",
+      "explanation": "The 2026 guideline recommends at least one lifetime Lp(a) measurement in adults.",
+      "clinicalPearl": "Lp(a) is largely genetically determined and is not meaningfully lowered by routine diet changes.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-084",
+      "domain": "Dyslipidemia",
+      "subtopic": "ApoB",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Why can ApoB be useful in selected patients?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It estimates the number of atherogenic lipoprotein particles."
+        },
+        {
+          "id": "B",
+          "text": "It directly measures HDL function."
+        },
+        {
+          "id": "C",
+          "text": "It is a marker of hydration only."
+        },
+        {
+          "id": "D",
+          "text": "It measures blood sodium."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "It estimates the number of atherogenic lipoprotein particles.",
+      "explanation": "Each atherogenic particle generally carries one ApoB molecule, so ApoB can help quantify particle burden.",
+      "clinicalPearl": "ApoB can add information when LDL-C and particle number are discordant, such as in hypertriglyceridemia.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-085",
+      "domain": "Dyslipidemia",
+      "subtopic": "Triglycerides",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which dietary issue should be assessed early in a patient with high triglycerides?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Excess energy, added sugars/refined carbohydrate and alcohol intake"
+        },
+        {
+          "id": "B",
+          "text": "Only calcium"
+        },
+        {
+          "id": "C",
+          "text": "Only dietary iron"
+        },
+        {
+          "id": "D",
+          "text": "Only vitamin C"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Excess energy, added sugars/refined carbohydrate and alcohol intake",
+      "explanation": "High triglycerides can be driven by excess energy intake, alcohol, added sugars/refined carbohydrates, obesity and poorly controlled diabetes, among other causes.",
+      "clinicalPearl": "Always assess secondary causes, medications and glycemic control—not diet alone.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-086",
+      "domain": "Dyslipidemia",
+      "subtopic": "Severe hypertriglyceridemia",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "At what triglyceride level does pancreatitis prevention become an especially urgent treatment consideration in the 2026 guideline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "≥150 mg/dL only"
+        },
+        {
+          "id": "B",
+          "text": "≥100 mg/dL"
+        },
+        {
+          "id": "C",
+          "text": "≥1,000 mg/dL"
+        },
+        {
+          "id": "D",
+          "text": "≥250 mg/dL in every patient"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "≥1,000 mg/dL",
+      "explanation": "Triglycerides at or above 1,000 mg/dL are associated with particularly high pancreatitis risk and may require triglyceride-lowering therapy in addition to lifestyle treatment.",
+      "clinicalPearl": "Extremely high triglycerides change the immediate nutrition priority.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-087",
+      "domain": "Dyslipidemia",
+      "subtopic": "Dietary therapy",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which dietary change is most likely to help lower LDL-C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase trans-fat intake."
+        },
+        {
+          "id": "B",
+          "text": "Replace oats with refined starch."
+        },
+        {
+          "id": "C",
+          "text": "Replace butter and fatty processed meat with unsaturated plant fats and high-fiber plant foods."
+        },
+        {
+          "id": "D",
+          "text": "Add coconut oil to each meal."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Replace butter and fatty processed meat with unsaturated plant fats and high-fiber plant foods.",
+      "explanation": "Reducing saturated/trans fat and increasing unsaturated fat and fiber is consistent with LDL-lowering dietary therapy.",
+      "clinicalPearl": "For LDL-C, saturated-fat replacement and soluble fiber are high-yield interventions.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-088",
+      "domain": "Dyslipidemia",
+      "subtopic": "Medication context",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient with ASCVD says, 'If I eat perfectly, I can stop my statin.' What is the best dietitian response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diet is foundational but should complement—not independently replace—prescribed guideline-directed lipid-lowering therapy."
+        },
+        {
+          "id": "B",
+          "text": "Use a supplement instead of medication."
+        },
+        {
+          "id": "C",
+          "text": "Diet has no role once medication starts."
+        },
+        {
+          "id": "D",
+          "text": "Stop the statin immediately if saturated fat is low."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Diet is foundational but should complement—not independently replace—prescribed guideline-directed lipid-lowering therapy.",
+      "explanation": "Nutrition and pharmacotherapy are complementary. Medication decisions belong with the prescribing clinician and should not be unilaterally changed.",
+      "clinicalPearl": "Never frame diet as a substitute for evidence-based secondary-prevention therapy.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-089",
+      "domain": "Dyslipidemia",
+      "subtopic": "Supplements",
+      "difficulty": "advanced",
+      "competency": "guideline_interpretation",
+      "question": "What does the 2026 dyslipidemia guideline say about dietary supplements for cholesterol management?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They are first-line for all patients."
+        },
+        {
+          "id": "B",
+          "text": "They should replace statins after MI."
+        },
+        {
+          "id": "C",
+          "text": "They are not recommended as a replacement for evidence-based lipid-lowering management."
+        },
+        {
+          "id": "D",
+          "text": "They are always safer and more effective than medications."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "They are not recommended as a replacement for evidence-based lipid-lowering management.",
+      "explanation": "The guideline emphasizes proven lifestyle and pharmacologic therapies rather than supplements for lipid lowering.",
+      "clinicalPearl": "Ask specifically about supplements because patients may omit them from medication histories.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-090",
+      "domain": "Dyslipidemia",
+      "subtopic": "Risk assessment",
+      "difficulty": "advanced",
+      "competency": "guideline_recall",
+      "question": "Which risk calculator replaced the older Pooled Cohort Equations in the 2026 ACC/AHA dyslipidemia guideline for many primary-prevention adults?",
+      "options": [
+        {
+          "id": "A",
+          "text": "APACHE II"
+        },
+        {
+          "id": "B",
+          "text": "PREVENT-ASCVD"
+        },
+        {
+          "id": "C",
+          "text": "MELD"
+        },
+        {
+          "id": "D",
+          "text": "CHA2DS2-VASc"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "PREVENT-ASCVD",
+      "explanation": "The 2026 guideline uses the AHA PREVENT equations for contemporary 10- and 30-year ASCVD risk estimation.",
+      "clinicalPearl": "A dietitian need not prescribe statins, but should understand the risk framework guiding the medical plan.",
+      "sourceIds": [
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-091",
+      "domain": "Dyslipidemia",
+      "subtopic": "Diet-lipid matching",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which nutrition strategy best matches the lipid abnormality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High LDL-C: prioritize saturated-fat replacement and soluble fiber; high triglycerides: also scrutinize alcohol, added sugars, refined carbohydrate and excess energy."
+        },
+        {
+          "id": "B",
+          "text": "Use the same single-food prescription for every lipid disorder."
+        },
+        {
+          "id": "C",
+          "text": "High LDL-C: increase butter; high triglycerides: increase sugary drinks."
+        },
+        {
+          "id": "D",
+          "text": "High triglycerides: ignore weight and glycemic control."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "High LDL-C: prioritize saturated-fat replacement and soluble fiber; high triglycerides: also scrutinize alcohol, added sugars, refined carbohydrate and excess energy.",
+      "explanation": "Different lipid phenotypes demand different nutrition priorities even within the same heart-healthy pattern.",
+      "clinicalPearl": "Mastery means matching intervention to phenotype.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_2026_DYSLIPIDEMIA"
+      ]
+    },
+    {
+      "id": "CVN-092",
+      "domain": "Weight management",
+      "subtopic": "Initial target",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "For many adults with excess weight, what initial weight-loss range can produce meaningful cardiometabolic benefit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Weight loss has no effect on cardiometabolic risk"
+        },
+        {
+          "id": "B",
+          "text": "About 5–10% of starting body weight"
+        },
+        {
+          "id": "C",
+          "text": "About 0.1% only"
+        },
+        {
+          "id": "D",
+          "text": "Exactly 25% for everyone"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "About 5–10% of starting body weight",
+      "explanation": "Even modest weight loss of about 5–10% can improve blood pressure, lipids and glycemic risk factors.",
+      "clinicalPearl": "Set clinically meaningful, achievable first targets.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-093",
+      "domain": "Weight management",
+      "subtopic": "Calculation",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "A patient weighs 92 kg. What is a 5% initial weight-loss target?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18.4 kg"
+        },
+        {
+          "id": "B",
+          "text": "4.6 kg"
+        },
+        {
+          "id": "C",
+          "text": "9.2 kg"
+        },
+        {
+          "id": "D",
+          "text": "0.92 kg"
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "4.6 kg",
+      "explanation": "92 × 0.05 = 4.6 kg.",
+      "clinicalPearl": "Dietitians should calculate 5% and 10% targets instantly.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-094",
+      "domain": "Weight management",
+      "subtopic": "Calculation",
+      "difficulty": "intermediate",
+      "competency": "calculation",
+      "question": "A patient weighs 110 kg. What is a 10% weight-loss target?",
+      "options": [
+        {
+          "id": "A",
+          "text": "22 kg"
+        },
+        {
+          "id": "B",
+          "text": "1.1 kg"
+        },
+        {
+          "id": "C",
+          "text": "5.5 kg"
+        },
+        {
+          "id": "D",
+          "text": "11 kg"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "11 kg",
+      "explanation": "110 × 0.10 = 11 kg.",
+      "clinicalPearl": "Translate percentages into concrete kilograms for counseling.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-095",
+      "domain": "Weight management",
+      "subtopic": "Energy balance",
+      "difficulty": "beginner",
+      "competency": "mechanism",
+      "question": "What is required for sustained loss of body fat?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sustained negative energy balance over time"
+        },
+        {
+          "id": "B",
+          "text": "Eliminating all dietary fat regardless of calories"
+        },
+        {
+          "id": "C",
+          "text": "A high sodium intake"
+        },
+        {
+          "id": "D",
+          "text": "Eating only after 8 PM"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "A sustained negative energy balance over time",
+      "explanation": "Body-fat loss requires energy expenditure to exceed energy intake over time.",
+      "clinicalPearl": "Diet quality matters for health and adherence, but energy balance remains fundamental for weight change.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-096",
+      "domain": "Weight management",
+      "subtopic": "Diet quality",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which approach best combines cardiovascular risk reduction with weight loss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Use unlimited healthy oils because they are unsaturated."
+        },
+        {
+          "id": "B",
+          "text": "Create an individualized energy deficit using a heart-healthy dietary pattern that is sustainable."
+        },
+        {
+          "id": "C",
+          "text": "Use an extreme crash diet regardless of nutrient adequacy."
+        },
+        {
+          "id": "D",
+          "text": "Focus only on scale weight and ignore blood pressure/lipids."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Create an individualized energy deficit using a heart-healthy dietary pattern that is sustainable.",
+      "explanation": "Sustainable energy reduction should preserve diet quality, protein adequacy and micronutrient intake.",
+      "clinicalPearl": "Weight loss is a tool, not the only outcome; monitor BP, lipids, glycemia and function.",
+      "sourceIds": [
+        "AHA_WEIGHT",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-097",
+      "domain": "Weight management",
+      "subtopic": "Hypertension",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "For an adult with hypertension and obesity, which statement is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blood pressure improves only after 30% weight loss."
+        },
+        {
+          "id": "B",
+          "text": "Only sodium matters."
+        },
+        {
+          "id": "C",
+          "text": "Even about 5% weight loss can support blood-pressure improvement."
+        },
+        {
+          "id": "D",
+          "text": "Weight has no relationship with blood pressure."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Even about 5% weight loss can support blood-pressure improvement.",
+      "explanation": "The 2025 hypertension guideline emphasizes weight management alongside DASH, sodium reduction, physical activity and alcohol reduction.",
+      "clinicalPearl": "Avoid single-factor counseling in multifactorial disease.",
+      "sourceIds": [
+        "AHA_2025_HTN"
+      ]
+    },
+    {
+      "id": "CVN-098",
+      "domain": "Weight management",
+      "subtopic": "Energy density",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which dietary pattern usually lowers energy density while improving cardiovascular quality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "More processed meat and pastries"
+        },
+        {
+          "id": "B",
+          "text": "More fried foods and sugary drinks"
+        },
+        {
+          "id": "C",
+          "text": "Large amounts of oil added to every dish"
+        },
+        {
+          "id": "D",
+          "text": "More vegetables, fruits, legumes and whole grains with controlled portions of energy-dense fats"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "More vegetables, fruits, legumes and whole grains with controlled portions of energy-dense fats",
+      "explanation": "Plant-rich foods increase fiber and volume while supporting a heart-healthy nutrient profile.",
+      "clinicalPearl": "Even healthy fats need portion control during weight loss.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-099",
+      "domain": "Weight management",
+      "subtopic": "Monitoring",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which outcome set best reflects high-quality cardiovascular weight-management follow-up?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Daily body-fat percentage from a consumer scale only"
+        },
+        {
+          "id": "B",
+          "text": "BMI only"
+        },
+        {
+          "id": "C",
+          "text": "Weight/waist plus BP, lipids, glycemia, diet adherence and functional status"
+        },
+        {
+          "id": "D",
+          "text": "Scale weight only"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Weight/waist plus BP, lipids, glycemia, diet adherence and functional status",
+      "explanation": "Cardiovascular risk reduction is multidimensional; body weight is only one marker.",
+      "clinicalPearl": "A patient can improve risk factors before reaching a 'normal' BMI.",
+      "sourceIds": [
+        "AHA_WEIGHT"
+      ]
+    },
+    {
+      "id": "CVN-100",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Cardiac rehabilitation",
+      "difficulty": "beginner",
+      "competency": "guideline_recall",
+      "question": "After an acute coronary syndrome, which service should eligible patients be referred to because it improves recovery and secondary prevention?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High-dose vitamin supplementation clinic"
+        },
+        {
+          "id": "B",
+          "text": "Detox cleanse program"
+        },
+        {
+          "id": "C",
+          "text": "Cardiac rehabilitation"
+        },
+        {
+          "id": "D",
+          "text": "Unsupervised extreme fasting"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Cardiac rehabilitation",
+      "explanation": "The 2025 ACS guideline recommends referral to cardiac rehabilitation after discharge.",
+      "clinicalPearl": "Nutrition counseling is one component of comprehensive cardiac rehabilitation.",
+      "sourceIds": [
+        "AHA_2025_ACS"
+      ]
+    },
+    {
+      "id": "CVN-101",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Secondary prevention",
+      "difficulty": "intermediate",
+      "competency": "food_pattern",
+      "question": "What is the long-term nutrition priority after MI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sustainable heart-healthy dietary pattern that reduces recurrent ASCVD risk"
+        },
+        {
+          "id": "B",
+          "text": "Complete elimination of all carbohydrate"
+        },
+        {
+          "id": "C",
+          "text": "A single 'superfood' taken daily"
+        },
+        {
+          "id": "D",
+          "text": "A temporary liquid diet for life"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "A sustainable heart-healthy dietary pattern that reduces recurrent ASCVD risk",
+      "explanation": "Secondary prevention is built on the overall dietary pattern, weight, activity, smoking status and guideline-directed medical therapy.",
+      "clinicalPearl": "There is no unique 'post-MI diet' disconnected from evidence-based ASCVD prevention.",
+      "sourceIds": [
+        "AHA_2025_ACS",
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-102",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Acute recovery",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A post-CABG patient has poor appetite and is meeting only 40% of estimated needs. What is the immediate nutrition priority?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep the patient NPO without indication."
+        },
+        {
+          "id": "B",
+          "text": "Ignore intake because long-term saturated fat matters more."
+        },
+        {
+          "id": "C",
+          "text": "Begin aggressive weight-loss dieting immediately."
+        },
+        {
+          "id": "D",
+          "text": "Assess nutritional risk and improve energy/protein intake while maintaining appropriate cardiac diet quality."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Assess nutritional risk and improve energy/protein intake while maintaining appropriate cardiac diet quality.",
+      "explanation": "After major surgery, underfeeding and malnutrition increase risk; early nutrition support is indicated when adequate oral intake cannot be maintained.",
+      "clinicalPearl": "Acute recovery priorities can temporarily differ from outpatient weight-loss priorities.",
+      "sourceIds": [
+        "ESPEN_SURGERY_2025"
+      ]
+    },
+    {
+      "id": "CVN-103",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Oral feeding",
+      "difficulty": "advanced",
+      "competency": "guideline_interpretation",
+      "question": "What is the modern general surgical-nutrition principle regarding postoperative oral intake when clinically appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep all major-surgery patients NPO for 7 days."
+        },
+        {
+          "id": "B",
+          "text": "Re-establish oral feeding as early as possible rather than prolonging unnecessary fasting."
+        },
+        {
+          "id": "C",
+          "text": "Delay feeding until discharge."
+        },
+        {
+          "id": "D",
+          "text": "Use parenteral nutrition routinely even when the gut works."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Re-establish oral feeding as early as possible rather than prolonging unnecessary fasting.",
+      "explanation": "ESPEN surgical guidance favors early oral feeding and avoidance of unnecessary perioperative fasting.",
+      "clinicalPearl": "Apply this with the surgical team's orders and the patient's hemodynamic/GI status.",
+      "sourceIds": [
+        "ESPEN_SURGERY_2025"
+      ]
+    },
+    {
+      "id": "CVN-104",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Protein",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Why is adequate protein important after CABG?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It eliminates sodium retention."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for cardiac rehabilitation."
+        },
+        {
+          "id": "C",
+          "text": "It supports wound healing and preservation/recovery of lean tissue."
+        },
+        {
+          "id": "D",
+          "text": "It directly dissolves coronary plaque."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "It supports wound healing and preservation/recovery of lean tissue.",
+      "explanation": "Major surgery increases recovery needs; adequate protein supports tissue repair and muscle maintenance.",
+      "clinicalPearl": "Do not let 'heart healthy' become inadvertently low-protein in a frail postoperative patient.",
+      "sourceIds": [
+        "ESPEN_SURGERY_2025"
+      ]
+    },
+    {
+      "id": "CVN-105",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Glycemic control",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Why should glucose control be considered in postoperative cardiac nutrition care?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Glucose has no relevance after surgery."
+        },
+        {
+          "id": "B",
+          "text": "Only sodium matters post-CABG."
+        },
+        {
+          "id": "C",
+          "text": "All carbohydrates must therefore be eliminated."
+        },
+        {
+          "id": "D",
+          "text": "Hyperglycemia can complicate recovery, and metabolic control is part of perioperative care."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Hyperglycemia can complicate recovery, and metabolic control is part of perioperative care.",
+      "explanation": "Perioperative guidelines include metabolic control, including blood glucose, as part of recovery.",
+      "clinicalPearl": "The answer is not zero carbohydrate; it is appropriate carbohydrate quality, amount and medical glycemic management.",
+      "sourceIds": [
+        "ESPEN_SURGERY_2025"
+      ]
+    },
+    {
+      "id": "CVN-106",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Long-term fat quality",
+      "difficulty": "intermediate",
+      "competency": "food_choice",
+      "question": "Which post-MI lunch is most aligned with secondary-prevention nutrition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Processed-meat sandwich with butter and chips"
+        },
+        {
+          "id": "B",
+          "text": "Fried pastry and soda"
+        },
+        {
+          "id": "C",
+          "text": "Lentil salad with vegetables, whole grain and olive-oil dressing"
+        },
+        {
+          "id": "D",
+          "text": "Cream-based fast-food meal"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Lentil salad with vegetables, whole grain and olive-oil dressing",
+      "explanation": "The first meal is plant-forward, high in fiber and uses unsaturated fat instead of saturated/trans-fat sources.",
+      "clinicalPearl": "Secondary prevention should look like a high-quality dietary pattern meal after meal.",
+      "sourceIds": [
+        "AHA_2026_DIET"
+      ]
+    },
+    {
+      "id": "CVN-107",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Medication-nutrition integration",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Which is the best dietitian message after MI regarding diet and medication?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Medication makes diet irrelevant."
+        },
+        {
+          "id": "B",
+          "text": "Supplements replace both diet and medication."
+        },
+        {
+          "id": "C",
+          "text": "Diet, cardiac rehabilitation and prescribed medications work together; none should be stopped without the treating clinician."
+        },
+        {
+          "id": "D",
+          "text": "Diet replaces all medications."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Diet, cardiac rehabilitation and prescribed medications work together; none should be stopped without the treating clinician.",
+      "explanation": "Secondary prevention is multidisciplinary and combines lifestyle with evidence-based pharmacotherapy.",
+      "clinicalPearl": "Dietitians should reinforce adherence and flag interactions without independently discontinuing drugs.",
+      "sourceIds": [
+        "AHA_2025_ACS"
+      ]
+    },
+    {
+      "id": "CVN-108",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Weight loss timing",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A nutritionally depleted patient is 5 days post-CABG and overweight by BMI. What is the best priority?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Create a large calorie deficit immediately because BMI is high."
+        },
+        {
+          "id": "B",
+          "text": "First restore adequate intake and support recovery; pursue intentional weight loss later when clinically stable."
+        },
+        {
+          "id": "C",
+          "text": "Use only clear liquids for several weeks."
+        },
+        {
+          "id": "D",
+          "text": "Withhold protein until weight falls."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "First restore adequate intake and support recovery; pursue intentional weight loss later when clinically stable.",
+      "explanation": "Postoperative healing and nutrition adequacy take priority when intake is poor or nutritional risk is present.",
+      "clinicalPearl": "BMI alone does not tell you whether aggressive calorie restriction is appropriate during acute recovery.",
+      "sourceIds": [
+        "ESPEN_SURGERY_2025"
+      ]
+    },
+    {
+      "id": "CVN-109",
+      "domain": "Post-MI & post-CABG",
+      "subtopic": "Education",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Before discharge after CABG, which nutrition education is most useful?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A concrete plan for heart-healthy meals, sodium/fat label reading, adequate recovery nutrition and follow-up in cardiac rehabilitation."
+        },
+        {
+          "id": "B",
+          "text": "A list of foods labeled simply 'good' or 'bad' with no context."
+        },
+        {
+          "id": "C",
+          "text": "A detox beverage protocol."
+        },
+        {
+          "id": "D",
+          "text": "Advice to avoid all dietary fat."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "A concrete plan for heart-healthy meals, sodium/fat label reading, adequate recovery nutrition and follow-up in cardiac rehabilitation.",
+      "explanation": "Discharge education should translate guidelines into shopping, meal planning, portions and follow-up.",
+      "clinicalPearl": "Knowledge without implementation planning rarely changes outcomes.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_2025_ACS"
+      ]
+    },
+    {
+      "id": "CVN-110",
+      "domain": "Heart failure",
+      "subtopic": "Sodium restriction",
+      "difficulty": "beginner",
+      "competency": "clinical_reasoning",
+      "question": "What does sodium restriction primarily aim to reduce in heart failure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vitamin K intake"
+        },
+        {
+          "id": "B",
+          "text": "Dietary cholesterol absorption"
+        },
+        {
+          "id": "C",
+          "text": "Protein catabolism"
+        },
+        {
+          "id": "D",
+          "text": "Sodium-driven fluid retention and congestive symptoms"
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Sodium-driven fluid retention and congestive symptoms",
+      "explanation": "Excess sodium can promote fluid retention, worsening congestion in susceptible patients.",
+      "clinicalPearl": "Sodium restriction and fluid restriction are different interventions.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-111",
+      "domain": "Heart failure",
+      "subtopic": "Fluid restriction",
+      "difficulty": "beginner",
+      "competency": "concept",
+      "question": "What does a fluid restriction limit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only table salt"
+        },
+        {
+          "id": "B",
+          "text": "Only saturated fat"
+        },
+        {
+          "id": "C",
+          "text": "The total volume of fluids consumed, not just sodium intake"
+        },
+        {
+          "id": "D",
+          "text": "Only cholesterol"
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "The total volume of fluids consumed, not just sodium intake",
+      "explanation": "Fluid restriction sets a volume limit across drinks and other countable fluids.",
+      "clinicalPearl": "A patient can follow a low-sodium diet yet exceed a fluid limit, or vice versa.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-112",
+      "domain": "Heart failure",
+      "subtopic": "Sodium vs fluid",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which example best illustrates sodium restriction without fluid restriction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Choosing low-sodium foods while drinking fluids according to thirst/medical guidance with no prescribed volume cap."
+        },
+        {
+          "id": "B",
+          "text": "Limiting all beverages to 1.5 L regardless of sodium."
+        },
+        {
+          "id": "C",
+          "text": "Avoiding all water but eating salty processed food."
+        },
+        {
+          "id": "D",
+          "text": "Measuring only dietary cholesterol."
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "Choosing low-sodium foods while drinking fluids according to thirst/medical guidance with no prescribed volume cap.",
+      "explanation": "Sodium restriction targets sodium intake; fluid restriction targets total fluid volume.",
+      "clinicalPearl": "Quiz these concepts with scenarios, not definitions alone.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-113",
+      "domain": "Heart failure",
+      "subtopic": "Sodium vs fluid",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which example best illustrates fluid restriction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Choosing unsalted nuts instead of salted nuts."
+        },
+        {
+          "id": "B",
+          "text": "Replacing butter with olive oil."
+        },
+        {
+          "id": "C",
+          "text": "Keeping total daily countable fluids within a prescribed volume such as 1.5 L when ordered."
+        },
+        {
+          "id": "D",
+          "text": "Increasing soluble fiber."
+        }
+      ],
+      "correctOption": "C",
+      "correctAnswer": "Keeping total daily countable fluids within a prescribed volume such as 1.5 L when ordered.",
+      "explanation": "A fluid restriction is a volume prescription and may include water, tea, coffee, milk, soup, ice and other fluids depending on local policy.",
+      "clinicalPearl": "Teach exactly what counts as fluid in the institution's protocol.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-114",
+      "domain": "Heart failure",
+      "subtopic": "Evidence nuance",
+      "difficulty": "advanced",
+      "competency": "guideline_interpretation",
+      "question": "According to the 2022 AHA/ACC/HFSA guideline, what is true about fluid restriction in advanced HF with hyponatremia?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is strongly required for every patient with HF."
+        },
+        {
+          "id": "B",
+          "text": "Its benefit for reducing congestive symptoms is uncertain."
+        },
+        {
+          "id": "C",
+          "text": "It is contraindicated in every patient with HF."
+        },
+        {
+          "id": "D",
+          "text": "It reliably lowers LDL-C."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Its benefit for reducing congestive symptoms is uncertain.",
+      "explanation": "The guideline rates the benefit of fluid restriction in advanced HF with hyponatremia as uncertain, underscoring the need for individualized medical guidance.",
+      "clinicalPearl": "Do not teach 'all HF patients need 1.5 L/day' as a universal rule.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-115",
+      "domain": "Heart failure",
+      "subtopic": "Daily weight",
+      "difficulty": "intermediate",
+      "competency": "monitoring",
+      "question": "Why is daily body weight useful in heart failure self-monitoring?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It replaces physical examination."
+        },
+        {
+          "id": "B",
+          "text": "Rapid changes can signal changing fluid status."
+        },
+        {
+          "id": "C",
+          "text": "It directly measures LDL-C."
+        },
+        {
+          "id": "D",
+          "text": "It measures sodium intake exactly."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Rapid changes can signal changing fluid status.",
+      "explanation": "Rapid weight gain can reflect fluid accumulation and should be interpreted with symptoms and the care plan.",
+      "clinicalPearl": "Daily weights are about trend recognition, not body-fat change over 24 hours.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-116",
+      "domain": "Heart failure",
+      "subtopic": "Label reading",
+      "difficulty": "intermediate",
+      "competency": "label_reading",
+      "question": "Which product is the better choice for a patient with HF who has been told to reduce sodium, assuming other nutrients are similar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A soup with 140 mg sodium per serving"
+        },
+        {
+          "id": "B",
+          "text": "A soup with 780 mg sodium per serving"
+        },
+        {
+          "id": "C",
+          "text": "A cured meat with 900 mg sodium per serving"
+        },
+        {
+          "id": "D",
+          "text": "A snack with 650 mg sodium per serving"
+        }
+      ],
+      "correctOption": "A",
+      "correctAnswer": "A soup with 140 mg sodium per serving",
+      "explanation": "Lower-sodium choices reduce cumulative sodium burden and may help manage congestion.",
+      "clinicalPearl": "Check serving size: eating several servings changes the sodium total.",
+      "sourceIds": [
+        "AHA_LABELS",
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-117",
+      "domain": "Heart failure",
+      "subtopic": "Thirst",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient on a prescribed fluid restriction complains of thirst. Which strategy can help without silently exceeding the fluid allowance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drink several liters of water at once."
+        },
+        {
+          "id": "B",
+          "text": "Eat more salty foods to stimulate thirst."
+        },
+        {
+          "id": "C",
+          "text": "Ignore the prescribed fluid cap."
+        },
+        {
+          "id": "D",
+          "text": "Spread allowed fluids across the day and use mouth care, ice chips if counted appropriately, and low-sodium foods to reduce thirst burden."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Spread allowed fluids across the day and use mouth care, ice chips if counted appropriately, and low-sodium foods to reduce thirst burden.",
+      "explanation": "Fluid-management strategies should improve comfort while respecting the prescribed plan; high sodium can worsen thirst and fluid retention.",
+      "clinicalPearl": "Local policies differ on how ice, gelatin and soup count toward fluid totals.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-118",
+      "domain": "Heart failure",
+      "subtopic": "Hyponatremia",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "Why is hyponatremia in heart failure not simply treated by telling every patient to eat more salt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because dietary salt cannot affect thirst."
+        },
+        {
+          "id": "B",
+          "text": "It can reflect complex water and neurohormonal imbalance; management depends on volume status, medications and the medical plan."
+        },
+        {
+          "id": "C",
+          "text": "Because all hyponatremia is caused by low protein."
+        },
+        {
+          "id": "D",
+          "text": "Because sodium has no role in extracellular fluid."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "It can reflect complex water and neurohormonal imbalance; management depends on volume status, medications and the medical plan.",
+      "explanation": "HF-associated hyponatremia is often dilutional and requires clinical assessment rather than reflex salt loading.",
+      "clinicalPearl": "Lab numbers must be interpreted in disease context.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-119",
+      "domain": "Heart failure",
+      "subtopic": "Nutrition adequacy",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient with advanced HF has poor appetite, edema and unintentional weight loss. What should the dietitian do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Restrict calories aggressively because edema increases body weight."
+        },
+        {
+          "id": "B",
+          "text": "Ignore protein intake until edema resolves."
+        },
+        {
+          "id": "C",
+          "text": "Assume weight is stable because scale weight has not fallen."
+        },
+        {
+          "id": "D",
+          "text": "Assess for malnutrition and muscle loss while interpreting body weight cautiously because edema can mask tissue loss."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Assess for malnutrition and muscle loss while interpreting body weight cautiously because edema can mask tissue loss.",
+      "explanation": "Fluid accumulation can conceal loss of lean and fat mass; nutrition assessment should include intake history and physical findings.",
+      "clinicalPearl": "Dry weight and nutrition-focused assessment are crucial in congested patients.",
+      "sourceIds": [
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-120",
+      "domain": "Heart failure",
+      "subtopic": "Food pattern",
+      "difficulty": "intermediate",
+      "competency": "clinical_reasoning",
+      "question": "Which meal is most appropriate for many stable HF patients advised to avoid excessive sodium?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Processed meat pizza"
+        },
+        {
+          "id": "B",
+          "text": "Canned soup plus salty crackers"
+        },
+        {
+          "id": "C",
+          "text": "Instant noodles with seasoning packet and pickle"
+        },
+        {
+          "id": "D",
+          "text": "Freshly cooked dal with controlled salt, vegetables and whole grain, with sodium-rich condiments minimized."
+        }
+      ],
+      "correctOption": "D",
+      "correctAnswer": "Freshly cooked dal with controlled salt, vegetables and whole grain, with sodium-rich condiments minimized.",
+      "explanation": "Home-prepared minimally processed foods make sodium easier to control than many instant, cured and restaurant foods.",
+      "clinicalPearl": "Indian dietary counseling should quantify salt, pickles, papad, chutneys, packaged snacks and restaurant gravies.",
+      "sourceIds": [
+        "AHA_2026_DIET",
+        "AHA_2022_HF"
+      ]
+    },
+    {
+      "id": "CVN-121",
+      "domain": "Heart failure",
+      "subtopic": "Integrated case",
+      "difficulty": "advanced",
+      "competency": "clinical_reasoning",
+      "question": "A patient with HFrEF, edema, CKD and potassium 5.6 mmol/L asks to use potassium chloride salt substitute to lower sodium. What is the safest response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ignore the potassium result because only sodium matters in HF."
+        },
+        {
+          "id": "B",
+          "text": "Do not recommend it without medical review because hyperkalemia and CKD make added potassium potentially dangerous."
+        },
+        {
+          "id": "C",
+          "text": "Recommend unlimited potassium salt substitute."
+        },
+        {
+          "id": "D",
+          "text": "Add potassium supplements as well."
+        }
+      ],
+      "correctOption": "B",
+      "correctAnswer": "Do not recommend it without medical review because hyperkalemia and CKD make added potassium potentially dangerous.",
+      "explanation": "Potassium-based salt substitutes can reduce sodium intake but may be dangerous when potassium excretion is impaired or serum potassium is elevated.",
+      "clinicalPearl": "The best cardiovascular advice may change when renal and electrolyte constraints are present.",
+      "sourceIds": [
+        "AHA_2025_HTN",
+        "WHO_SODIUM",
+        "AHA_2022_HF"
+      ]
+    }
+  ]
+}

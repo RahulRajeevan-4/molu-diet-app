@@ -12,6 +12,9 @@ export default function NavBar() {
           <NavLink to="/recipes" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>
             Recipe Builder
           </NavLink>
+          <NavLink to="/quiz" className={({ isActive }) => "nav-link" + (isActive ? " active" : "")}>
+            Quiz
+          </NavLink>
         </div>
       </div>
     </nav>
