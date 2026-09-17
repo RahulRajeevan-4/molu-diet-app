@@ -21,10 +21,6 @@ export default function Toolbar({
   setOnlyFlagged,
   sortKey,
   setSortKey,
-  sortDir,
-  setSortDir,
-  resultCount,
-  totalCount,
 }) {
   return (
     <div className="toolbar">
@@ -74,18 +70,7 @@ export default function Toolbar({
             </option>
           ))}
         </select>
-        <button
-          className="chip-btn"
-          onClick={() => setSortDir((d) => (d === "asc" ? "desc" : "asc"))}
-          aria-label={sortDir === "asc" ? "Sort ascending" : "Sort descending"}
-          title={sortDir === "asc" ? "Ascending" : "Descending"}
-        >
-          {sortDir === "asc" ? "▲" : "▼"}
-        </button>
       </div>
-      <span className="result-count">
-        {resultCount} of {totalCount} shown
-      </span>
     </div>
   );
 }
