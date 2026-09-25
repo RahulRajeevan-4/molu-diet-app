@@ -46,7 +46,7 @@ const ENTRIES = FOODS.flatMap((food) =>
 /**
  * Finds the closest fruit or vegetable for a free-text name. Tiers, most to least certain:
  *   1. same words ("strawberries" → Strawberry, "curry leaf" → Curry Leaves)
- *   2. a food name inside the query ("ripe mango" → Mango); longest wins
+ *   2. a food name that ends the query ("ripe mango" → Mango, but not "olive oil" → Olive); longest wins
  *   3. "<x>fruit" names ("kiwi" → Kiwifruit)
  *   4. the query as the food's main noun ("bean" → Green Beans, "cherry" → Sweet Cherry)
  *   5. the query anywhere in a food name as whole words ("coriander" → Coriander Leaves)
@@ -54,9 +54,12 @@ const ENTRIES = FOODS.flatMap((food) =>
  * No partial-word guesses: unmatched names are reported, not approximated.
  *
  * @param {string} name
- * @param {{ prefer?: "fruit" | "vegetable" | null, kinds?: string[] }} [options]
+ * `exactOnly` limits matching to tier 1 — used for items that aren't produce
+ * (e.g. "coconut milk" must not become Coconut).
+ *
+ * @param {{ prefer?: "fruit" | "vegetable" | null, kinds?: string[], exactOnly?: boolean }} [options]
  */
-export function matchFoodByName(name, { prefer = null, kinds = null } = {}) {
+export function matchFoodByName(name, { prefer = null, kinds = null, exactOnly = false } = {}) {
   const q = words(name ?? "");
   if (!q.length) return null;
 
@@ -74,11 +77,12 @@ export function matchFoodByName(name, { prefer = null, kinds = null } = {}) {
     (e) => containsWords(e.words, q),
   ];
 
-  for (let t = 0; t < tiers.length; t++) {
+  for (let t = 0; t < (exactOnly ? 1 : tiers.length); t++) {
     if (t === 1) {
       let best = null;
       for (const e of ordered) {
-        if (containsWords(q, e.words) && (!best || e.words.length > best.words.length)) best = e;
+        const endsQuery = wordEq(last(e.words), last(q)) && containsWords(q, e.words);
+        if (endsQuery && (!best || e.words.length > best.words.length)) best = e;
       }
       if (best) return best.food;
       continue;

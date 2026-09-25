@@ -1,5 +1,6 @@
 import { FRUITS } from "./fruitData.js";
 import rawVegetables from "../data/vegetables.json";
+import pulseData from "../data/pulses.json";
 
 const NUTRIENT_FIELDS = [
   { key: "energy_kcal", label: "energy", unit: "kcal", value: (f) => f.nutrients_per_100g.energy_kcal },
@@ -30,7 +31,7 @@ function makeCategory({ id, label, noun, items, group, groupExplanation, builder
     noun,
     count: items.length,
     all: items,
-    quant: items.filter((f) => (f.data_completeness || "").startsWith("quantitative_core_available")),
+    quant: items.filter((f) => (f.data_completeness || "").startsWith("quantitative_core")),
     grouped: items.filter((f) => f[group]),
     profiled: items.filter((f) => (f.key_micronutrients || []).length > 0),
     phyto: items.filter((f) => (f.key_phytochemicals || []).length > 0),
@@ -42,6 +43,11 @@ function makeCategory({ id, label, noun, items, group, groupExplanation, builder
     valueNote,
     builders,
   };
+}
+
+// True when `list` contains `term` or a qualified form of it, e.g. "flavonoids (seed coat dependent)" for "flavonoids".
+function hasTerm(list, term) {
+  return (list || []).some((t) => t === term || t.startsWith(term + " ") || term.startsWith(t + " "));
 }
 
 function pickRandom(arr) {
@@ -146,7 +152,7 @@ function buildMicronutrientQuestion(c) {
   const micro = pickRandom(item.key_micronutrients);
   const correct = item.common_name;
   const pool = c.profiled.filter(
-    (f) => f.common_name !== item.common_name && !(f.key_micronutrients || []).includes(micro)
+    (f) => f.common_name !== item.common_name && !hasTerm(f.key_micronutrients, micro)
   );
   const distractors = sampleUniqueByValue(pool, 3, (f) => f.common_name).map((f) => f.common_name);
   if (distractors.length < 3) return null;
@@ -165,7 +171,7 @@ function buildPhytochemicalQuestion(c) {
   const phyto = pickRandom(item.key_phytochemicals);
   const correct = item.common_name;
   const pool = c.phyto.filter(
-    (f) => f.common_name !== item.common_name && !(f.key_phytochemicals || []).includes(phyto)
+    (f) => f.common_name !== item.common_name && !hasTerm(f.key_phytochemicals, phyto)
   );
   const distractors = sampleUniqueByValue(pool, 3, (f) => f.common_name).map((f) => f.common_name);
   if (distractors.length < 3) return null;
@@ -238,13 +244,33 @@ const CATEGORIES = {
       buildClinicalNoteQuestion,
     ],
   }),
+  // Pulse region notes overlap ("Global", "India and South Asia", "India and Africa") and its
+  // clinical notes are mostly shared boilerplate, so region and clinical-note questions are left out.
+  pulses: makeCategory({
+    id: "pulses",
+    label: "Pulses",
+    noun: "legume",
+    items: pulseData.pulses,
+    group: "pulse_group",
+    groupExplanation: (name, group) => `${name} belongs to the "${group}" group.`,
+    valueNote: " (Values are per 100 g of the exact form named, e.g. dry raw or boiled.)",
+    builders: [
+      buildScientificNameQuestion,
+      buildGroupQuestion,
+      buildGroupQuestion,
+      buildNutrientExtremeQuestion,
+      buildNutrientExtremeQuestion,
+      buildMicronutrientQuestion,
+      buildPhytochemicalQuestion,
+    ],
+  }),
 };
 
 /** Buttons on the quiz page. Categories without a dataset yet are listed as unavailable. */
 export const QUIZ_CATEGORIES = [
   { id: "fruits", label: "Fruits", count: CATEGORIES.fruits.count, available: true },
   { id: "vegetables", label: "Vegetables", count: CATEGORIES.vegetables.count, available: true },
-  { id: "pulses", label: "Pulses", count: 0, available: false },
+  { id: "pulses", label: "Pulses", count: CATEGORIES.pulses.count, available: true },
 ];
 
 export function generateQuiz(count = 10, categoryId = "fruits") {

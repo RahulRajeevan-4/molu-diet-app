@@ -1,7 +1,18 @@
 import { useState } from "react";
-import { parseRecipeWithAI } from "../lib/openrouter.js";
+import { parseRecipeWithAI, logNotFound } from "../lib/openrouter.js";
 import { matchFoodByName } from "../lib/matchFood.js";
 import { hasNutrientData } from "../lib/foodData.js";
+
+function describeCounts(counts) {
+  return [
+    ["fruit", "fruit", "fruits"],
+    ["vegetable", "vegetable", "vegetables"],
+    ["other", "other ingredient", "other ingredients"],
+  ]
+    .filter(([k]) => counts[k] > 0)
+    .map(([k, one, many]) => `${counts[k]} ${counts[k] === 1 ? one : many}`)
+    .join(", ");
+}
 
 export default function RecipeImport({ onAdd }) {
   const [recipeText, setRecipeText] = useState("");
@@ -30,11 +41,10 @@ export default function RecipeImport({ onAdd }) {
       // Match every item against both datasets; the model's type only sets the preference,
       // since it sometimes labels spices as vegetables or vice versa.
       for (const item of items) {
-        const food = matchFoodByName(item.name, {
-          prefer: item.type === "fruit" || item.type === "vegetable" ? item.type : null,
-        });
+        const produce = item.type === "fruit" || item.type === "vegetable";
+        const food = matchFoodByName(item.name, { prefer: produce ? item.type : null, exactOnly: !produce });
         if (!food) {
-          notFound.push(item.name);
+          notFound.push({ name: item.name, type: item.type });
           continue;
         }
         const grams = item.grams ?? 100;
@@ -43,7 +53,8 @@ export default function RecipeImport({ onAdd }) {
       }
 
       if (toAdd.length > 0) onAdd(toAdd);
-      setResult({ added, notFound });
+      const log = await logNotFound(notFound);
+      setResult({ added, notFound, log });
     } catch (err) {
       setError(err.message || "Something went wrong parsing that recipe.");
     } finally {
@@ -94,7 +105,14 @@ export default function RecipeImport({ onAdd }) {
           )}
           {result.notFound.length > 0 && (
             <p className="import-summary import-summary-muted">
-              <b>Not in the fruit or vegetable datasets:</b> {result.notFound.join(", ")}
+              <b>Not in the fruit or vegetable datasets:</b> {result.notFound.map((n) => n.name).join(", ")}
+            </p>
+          )}
+          {result.notFound.length > 0 && result.log && (
+            <p className="import-summary import-summary-muted">
+              {result.log.recorded
+                ? `Saved to ${result.log.file} for dataset review: ${describeCounts(result.log.counts)}.`
+                : `Not saved to notfound.json${result.log.reason ? ` (${result.log.reason})` : ""}.`}
             </p>
           )}
           {result.added.length === 0 && result.notFound.length === 0 && (

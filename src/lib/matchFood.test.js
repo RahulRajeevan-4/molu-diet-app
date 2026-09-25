@@ -63,6 +63,18 @@ describe("matchFoodByName — no match", () => {
     }
   );
 
+  it("needs the food name to be the main noun of the query", () => {
+    expect(match("olive oil")).toBeNull();
+    expect(match("kohlrabi greens", "vegetable")).toBeNull();
+    expect(match("coconut milk")).toBeNull();
+    expect(match("fresh ginger", "vegetable")).toBe("Ginger");
+  });
+
+  it("only accepts exact names for non-produce items", () => {
+    expect(matchFoodByName("olive", { exactOnly: true })?.common_name).toBe("Olive");
+    expect(matchFoodByName("ripe mango", { exactOnly: true })).toBeNull();
+  });
+
   it("can be limited to one kind", () => {
     expect(matchFoodByName("carrot", { kinds: ["fruit"] })).toBeNull();
   });

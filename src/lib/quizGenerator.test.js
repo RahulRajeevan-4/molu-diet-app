@@ -1,16 +1,17 @@
 import { describe, it, expect } from "vitest";
 import { generateQuiz, QUIZ_CATEGORIES } from "./quizGenerator.js";
 import vegetables from "../data/vegetables.json";
+import pulseData from "../data/pulses.json";
 import { FRUITS } from "./fruitData.js";
 
-const DATA = { fruits: FRUITS, vegetables };
+const DATA = { fruits: FRUITS, vegetables, pulses: pulseData.pulses };
 const RUNS = 30;
 
 function byName(items) {
   return new Map(items.map((i) => [i.common_name, i]));
 }
 
-describe.each(["fruits", "vegetables"])("%s quiz", (categoryId) => {
+describe.each(["fruits", "vegetables", "pulses"])("%s quiz", (categoryId) => {
   const items = DATA[categoryId];
   const lookup = byName(items);
 
@@ -40,7 +41,9 @@ describe.each(["fruits", "vegetables"])("%s quiz", (categoryId) => {
         } else if (type === "micro" || type === "phyto") {
           const field = type === "micro" ? "key_micronutrients" : "key_phytochemicals";
           const term = type === "micro" ? q.prompt.match(/associated with (.*)\?$/)[1] : q.prompt.match(/"(.*)"/)[1];
-          const matching = q.options.filter((o) => (lookup.get(o)[field] || []).includes(term));
+          const matching = q.options.filter((o) =>
+            (lookup.get(o)[field] || []).some((t) => t === term || t.startsWith(term + " ") || term.startsWith(t + " "))
+          );
           expect(matching).toEqual([correct]);
         } else if (type === "sci") {
           const name = q.prompt.match(/scientific name of (.*)\?$/)[1];
@@ -70,15 +73,26 @@ describe("vegetable quiz", () => {
   });
 });
 
+describe("pulse quiz", () => {
+  it("never asks region or clinical-note questions", () => {
+    for (let run = 0; run < RUNS; run++) {
+      for (const q of generateQuiz(20, "pulses")) {
+        expect(q.id.startsWith("region-")).toBe(false);
+        expect(q.id.startsWith("clinical-")).toBe(false);
+      }
+    }
+  });
+});
+
 describe("quiz categories", () => {
-  it("lists fruits and vegetables as available and pulses as coming soon", () => {
+  it("lists fruits, vegetables and pulses as available", () => {
     const byId = Object.fromEntries(QUIZ_CATEGORIES.map((c) => [c.id, c]));
     expect(byId.fruits).toMatchObject({ available: true, count: 264 });
     expect(byId.vegetables).toMatchObject({ available: true, count: 287 });
-    expect(byId.pulses.available).toBe(false);
+    expect(byId.pulses).toMatchObject({ available: true, count: 174 });
   });
 
   it("refuses categories without a dataset", () => {
-    expect(() => generateQuiz(10, "pulses")).toThrow(/No quiz dataset/);
+    expect(() => generateQuiz(10, "nuts")).toThrow(/No quiz dataset/);
   });
 });

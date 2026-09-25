@@ -21,3 +21,24 @@ export async function parseRecipeWithAI({ recipeText }) {
   }
   return data.items;
 }
+
+/**
+ * Sends every unmatched ingredient (with the AI's type) to /api/not-found, which
+ * appends it to notfound.json (dev and preview servers only).
+ * Never throws: logging must not break the import.
+ */
+export async function logNotFound(items) {
+  const payload = items.filter((i) => i && i.name);
+  if (!payload.length) return { recorded: false, skipped: true };
+  try {
+    const res = await fetch("/api/not-found", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items: payload.map(({ name, type }) => ({ name, type })) }),
+    });
+    const data = await res.json().catch(() => null);
+    return res.ok && data ? data : { recorded: false, reason: data?.error || `HTTP ${res.status}` };
+  } catch {
+    return { recorded: false, reason: "network error" };
+  }
+}

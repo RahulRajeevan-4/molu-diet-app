@@ -1,4 +1,5 @@
 // Server-side only. The OpenRouter key must never reach the browser bundle.
+import { HttpError, readJsonBody, send } from "./http.js";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 export const MAX_RECIPE_CHARS = 8000;
 
@@ -12,10 +13,9 @@ Respond with ONLY valid JSON, no prose, no markdown code fences, matching exactl
 "type" must be one of "fruit", "vegetable", or "other". Fresh herbs and leaves (e.g. curry leaves, coriander) and fresh roots such as ginger are "vegetable"; seeds, dried spices and powders (e.g. mustard seed, turmeric powder, asafoetida), grains, pulses, dairy, oils, sugar and salt are "other". "name" must be a common, singular, English name (e.g. "banana", not "bananas" or "Musa spp.").`;
 
 /** Error with an HTTP status to return to the browser. */
-export class RecipeParseError extends Error {
+export class RecipeParseError extends HttpError {
   constructor(message, status = 502) {
-    super(message);
-    this.status = status;
+    super(message, status);
   }
 }
 
@@ -98,28 +98,6 @@ export function extractJson(text) {
   return cleaned;
 }
 
-async function readJsonBody(req) {
-  if (req.body !== undefined) {
-    return typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-  }
-  const chunks = [];
-  let size = 0;
-  for await (const chunk of req) {
-    size += chunk.length;
-    if (size > MAX_RECIPE_CHARS * 4) throw new RecipeParseError("Request body too large.", 413);
-    chunks.push(chunk);
-  }
-  const raw = Buffer.concat(chunks).toString("utf8");
-  return raw ? JSON.parse(raw) : {};
-}
-
-function send(res, status, payload) {
-  res.statusCode = status;
-  res.setHeader("Content-Type", "application/json");
-  res.setHeader("Cache-Control", "no-store");
-  res.end(JSON.stringify(payload));
-}
-
 /**
  * Plain Node (req, res) handler, shared by the Vercel function and the Vite
  * dev-server middleware so both behave identically.
@@ -132,9 +110,9 @@ export async function handleParseRecipeRequest(req, res, env) {
   try {
     let body;
     try {
-      body = await readJsonBody(req);
+      body = await readJsonBody(req, MAX_RECIPE_CHARS * 4);
     } catch (err) {
-      if (err instanceof RecipeParseError) throw err;
+      if (err instanceof HttpError) throw err;
       throw new RecipeParseError("Request body must be JSON.", 400);
     }
     const items = await parseRecipe({
@@ -145,9 +123,9 @@ export async function handleParseRecipeRequest(req, res, env) {
     });
     return send(res, 200, { items });
   } catch (err) {
-    const status = err instanceof RecipeParseError ? err.status : 500;
-    const message = err instanceof RecipeParseError ? err.message : "Unexpected server error.";
-    if (!(err instanceof RecipeParseError)) console.error("[parse-recipe]", err);
+    const status = err instanceof HttpError ? err.status : 500;
+    const message = err instanceof HttpError ? err.message : "Unexpected server error.";
+    if (!(err instanceof HttpError)) console.error("[parse-recipe]", err);
     return send(res, status, { error: message });
   }
 }
