@@ -1,10 +1,11 @@
 import { useMemo, useState } from "react";
-import { generateQuiz } from "../lib/quizGenerator.js";
+import { generateQuiz, QUIZ_CATEGORIES } from "../lib/quizGenerator.js";
 
 const LENGTH_OPTIONS = [5, 10, 15, 20];
 
 export default function QuizPage() {
   const [length, setLength] = useState(10);
+  const [category, setCategory] = useState(null);
   const [questions, setQuestions] = useState(null);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState(null);
@@ -14,8 +15,12 @@ export default function QuizPage() {
   const finished = questions !== null && index >= questions.length;
   const score = useMemo(() => history.filter((h) => h.correct).length, [history]);
 
-  function startQuiz(n) {
-    setQuestions(generateQuiz(n));
+  const categoryInfo = QUIZ_CATEGORIES.find((c) => c.id === category);
+  const eyebrow = categoryInfo ? `${categoryInfo.label} nutrition quiz` : "Nutrition quiz";
+
+  function startQuiz(n, categoryId) {
+    setCategory(categoryId);
+    setQuestions(generateQuiz(n, categoryId));
     setIndex(0);
     setSelected(null);
     setHistory([]);
@@ -42,16 +47,16 @@ export default function QuizPage() {
   if (!questions) {
     return (
       <div className="wrap">
-        <p className="eyebrow">Fruit nutrition quiz</p>
-        <h1 className="headline">Test what you know about fruit nutrition</h1>
+        <p className="eyebrow">Nutrition quiz</p>
+        <h1 className="headline">Test what you know about food nutrition</h1>
         <p className="sub">
-          Each quiz randomly pulls questions from the 264-fruit clinical dataset — scientific
-          names, regions, classifications, key nutrients, micronutrients, phytochemicals and
-          clinical notes. No two quizzes are the same.
+          Each quiz randomly pulls questions from the chosen clinical dataset — scientific names,
+          classifications, key nutrients, micronutrients, phytochemicals and clinical notes. No two
+          quizzes are the same.
         </p>
 
         <div className="card quiz-start">
-          <h2 className="quiz-start-title">How many questions?</h2>
+          <h2 className="quiz-start-title">1. How many questions?</h2>
           <div className="quiz-length-grid">
             {LENGTH_OPTIONS.map((n) => (
               <button
@@ -64,9 +69,23 @@ export default function QuizPage() {
               </button>
             ))}
           </div>
-          <button type="button" className="chip-btn active quiz-start-btn" onClick={() => startQuiz(length)}>
-            Start quiz
-          </button>
+          <h2 className="quiz-start-title quiz-category-title">2. Choose a quiz to start</h2>
+          <div className="quiz-category-grid">
+            {QUIZ_CATEGORIES.map((c) => (
+              <button
+                key={c.id}
+                type="button"
+                className="quiz-category-btn"
+                disabled={!c.available}
+                onClick={() => startQuiz(length, c.id)}
+              >
+                <span className="quiz-category-name">{c.label}</span>
+                <span className="quiz-category-meta">
+                  {c.available ? `${c.count} in dataset` : "Coming soon — no dataset yet"}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     );
@@ -76,7 +95,7 @@ export default function QuizPage() {
     const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
     return (
       <div className="wrap">
-        <p className="eyebrow">Fruit nutrition quiz</p>
+        <p className="eyebrow">{eyebrow}</p>
         <h1 className="headline">Quiz complete</h1>
 
         <div className="card quiz-results">
@@ -106,11 +125,11 @@ export default function QuizPage() {
           </ol>
 
           <div className="quiz-results-actions">
-            <button type="button" className="chip-btn active" onClick={() => startQuiz(length)}>
-              Play again ({length} questions)
+            <button type="button" className="chip-btn active" onClick={() => startQuiz(length, category)}>
+              Play again ({categoryInfo.label}, {length} questions)
             </button>
             <button type="button" className="chip-btn" onClick={backToStart}>
-              Change length
+              Choose another quiz
             </button>
           </div>
         </div>
@@ -120,7 +139,7 @@ export default function QuizPage() {
 
   return (
     <div className="wrap">
-      <p className="eyebrow">Fruit nutrition quiz</p>
+      <p className="eyebrow">{eyebrow}</p>
       <h1 className="headline">Question {index + 1} of {questions.length}</h1>
 
       <div className="quiz-progress-track">

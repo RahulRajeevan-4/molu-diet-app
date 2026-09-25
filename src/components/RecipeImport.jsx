@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { parseRecipeWithAI } from "../lib/openrouter.js";
-import { matchFruitByName } from "../lib/matchFruit.js";
-
-const API_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
-const MODEL = import.meta.env.VITE_OPENROUTER_MODEL || "openai/gpt-4o-mini";
+import { matchFoodByName } from "../lib/matchFood.js";
+import { hasNutrientData } from "../lib/foodData.js";
 
 export default function RecipeImport({ onAdd }) {
   const [recipeText, setRecipeText] = useState("");
@@ -16,12 +14,6 @@ export default function RecipeImport({ onAdd }) {
     setError("");
     setResult(null);
 
-    if (!API_KEY) {
-      setError(
-        "No OpenRouter API key configured. Set VITE_OPENROUTER_API_KEY in .env and restart the dev server."
-      );
-      return;
-    }
     if (!recipeText.trim()) {
       setError("Paste a recipe to parse.");
       return;
@@ -29,29 +21,29 @@ export default function RecipeImport({ onAdd }) {
 
     setLoading(true);
     try {
-      const items = await parseRecipeWithAI({ apiKey: API_KEY, model: MODEL, recipeText });
+      const items = await parseRecipeWithAI({ recipeText });
 
       const added = [];
-      const skipped = [];
+      const notFound = [];
       const toAdd = [];
 
+      // Match every item against both datasets; the model's type only sets the preference,
+      // since it sometimes labels spices as vegetables or vice versa.
       for (const item of items) {
-        if (item.type !== "fruit") {
-          skipped.push({ name: item.name, reason: `${item.type} — not supported yet` });
-          continue;
-        }
-        const fruit = matchFruitByName(item.name);
-        if (!fruit) {
-          skipped.push({ name: item.name, reason: "not in the fruit dataset" });
+        const food = matchFoodByName(item.name, {
+          prefer: item.type === "fruit" || item.type === "vegetable" ? item.type : null,
+        });
+        if (!food) {
+          notFound.push(item.name);
           continue;
         }
         const grams = item.grams ?? 100;
-        toAdd.push({ fruitName: fruit.common_name, grams });
-        added.push({ name: fruit.common_name, grams });
+        toAdd.push({ fruitName: food.common_name, grams });
+        added.push({ name: food.common_name, grams, noData: !hasNutrientData(food) });
       }
 
       if (toAdd.length > 0) onAdd(toAdd);
-      setResult({ added, skipped });
+      setResult({ added, notFound });
     } catch (err) {
       setError(err.message || "Something went wrong parsing that recipe.");
     } finally {
@@ -64,14 +56,15 @@ export default function RecipeImport({ onAdd }) {
       <h2 className="sidebar-title">Paste a recipe</h2>
       <p className="picker-hint import-intro">
         Paste an ingredient list or freeform recipe text. An AI model, called through
-        OpenRouter, reads it, estimates gram quantities, and adds every recognized fruit to
-        this recipe automatically.
+        OpenRouter, reads it, estimates gram quantities, and adds every recognized fruit and
+        vegetable to this recipe automatically. Spices, grains, oils and other ingredients
+        aren&rsquo;t in the datasets yet and are listed separately.
       </p>
 
       <form onSubmit={handleParse}>
         <textarea
           className="recipe-textarea"
-          placeholder={"Paste your recipe here, e.g.\n2 bananas\n1 cup strawberries, sliced\n1 tbsp honey"}
+          placeholder={"Paste your recipe here, e.g.\n2 bananas\n1 cup strawberries, sliced\n1 carrot, grated"}
           value={recipeText}
           onChange={(e) => setRecipeText(e.target.value)}
           rows={6}
@@ -90,16 +83,21 @@ export default function RecipeImport({ onAdd }) {
         <div className="import-result">
           {result.added.length > 0 && (
             <p className="import-summary">
-              Added {result.added.length} ingredient{result.added.length === 1 ? "" : "s"}:{" "}
-              {result.added.map((a) => `${a.name} (${a.grams}g)`).join(", ")}
+              <b>Added {result.added.length}:</b>{" "}
+              {result.added.map((a, i) => (
+                <span key={a.name + i}>
+                  {i > 0 && ", "}
+                  {a.name} ({a.grams} g){a.noData && <span className="import-summary-muted"> – no nutrient data</span>}
+                </span>
+              ))}
             </p>
           )}
-          {result.skipped.length > 0 && (
+          {result.notFound.length > 0 && (
             <p className="import-summary import-summary-muted">
-              Not added: {result.skipped.map((s) => `${s.name} — ${s.reason}`).join("; ")}
+              <b>Not in the fruit or vegetable datasets:</b> {result.notFound.join(", ")}
             </p>
           )}
-          {result.added.length === 0 && result.skipped.length === 0 && (
+          {result.added.length === 0 && result.notFound.length === 0 && (
             <p className="import-summary import-summary-muted">No ingredients recognized.</p>
           )}
         </div>

@@ -11,6 +11,20 @@ npm install
 npm run dev
 ```
 
+## Recipe import (OpenRouter)
+
+The Recipe Builder's "Paste a recipe" box sends text to `/api/parse-recipe`, which calls
+OpenRouter **server-side** (`api/parse-recipe.js` on Vercel; a Vite middleware in dev and preview).
+Set these in `.env` locally and in the Vercel project's Environment Variables:
+
+```
+OPENROUTER_API_KEY=sk-or-...
+OPENROUTER_MODEL=qwen/qwen3.5-35b-a3b
+```
+
+Don't use a `VITE_` prefix for the key — `VITE_` variables are embedded in the public bundle.
+Restart `npm run dev` after changing `.env`.
+
 ## Tests
 
 ```bash

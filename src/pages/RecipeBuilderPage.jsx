@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import { FRUITS } from "../lib/fruitData.js";
+import { FOODS, FOOD_BY_NAME } from "../lib/foodData.js";
+import { matchFoodByName } from "../lib/matchFood.js";
 import { NUTRIENT_FIELDS } from "../lib/nutrients.js";
 import RecipeNutritionTable from "../components/RecipeNutritionTable.jsx";
 import RecipeImport from "../components/RecipeImport.jsx";
+import RecipeOverview from "../components/RecipeOverview.jsx";
 
 const STORAGE_KEY = "molu_recipes";
 let nextIngredientId = 1;
@@ -33,11 +35,9 @@ export default function RecipeBuilderPage() {
 
   function addIngredient(e) {
     e.preventDefault();
-    const match = FRUITS.find(
-      (f) => f.common_name.toLowerCase() === pickerName.trim().toLowerCase()
-    );
+    const match = FOOD_BY_NAME.get(pickerName.trim()) ?? matchFoodByName(pickerName);
     if (!match) {
-      setPickerError(`"${pickerName}" isn't in the list. Pick a suggestion from the dropdown.`);
+      setPickerError(`"${pickerName}" isn't in the fruit or vegetable datasets. Pick a suggestion from the dropdown.`);
       return;
     }
     const grams = Number(pickerGrams);
@@ -107,14 +107,22 @@ export default function RecipeBuilderPage() {
 
   const rows = useMemo(() => {
     return draft.ingredients.map((ing) => {
-      const fruit = FRUITS.find((f) => f.common_name === ing.fruitName);
+      // `fruitName` is the stored key for any ingredient (kept for saved-recipe compatibility).
+      const food = FOOD_BY_NAME.get(ing.fruitName);
       const factor = ing.grams / 100;
       const values = {};
       NUTRIENT_FIELDS.forEach((field) => {
-        const per100 = fruit?.nutrients_per_100g?.[field.key];
+        const per100 = food?.nutrients_per_100g?.[field.key];
         values[field.key] = per100 == null ? null : per100 * factor;
       });
-      return { id: ing.id, fruitName: ing.fruitName, grams: ing.grams, values };
+      return {
+        id: ing.id,
+        fruitName: ing.fruitName,
+        grams: ing.grams,
+        kind: food?.kind ?? null,
+        provisional: Boolean(food?.provisional),
+        values,
+      };
     });
   }, [draft.ingredients]);
 
@@ -143,10 +151,10 @@ export default function RecipeBuilderPage() {
   return (
     <div className="wrap">
       <p className="eyebrow">Recipe builder</p>
-      <h1 className="headline">Combine fruits &amp; auto-calculate nutrition</h1>
+      <h1 className="headline">Combine fruits &amp; vegetables and auto-calculate nutrition</h1>
       <p className="sub">
         Add ingredients with a quantity in grams and the table below totals the nutrition
-        automatically, using the same per-100g clinical dataset as the fruit reference.
+        automatically, using the per-100g fruit and vegetable reference datasets.
       </p>
 
       <div className="recipe-layout">
@@ -178,7 +186,7 @@ export default function RecipeBuilderPage() {
             <form className="ingredient-picker" onSubmit={addIngredient}>
               <input
                 type="text"
-                list="fruit-options"
+                list="food-options"
                 placeholder="Search fruit or vegetable…"
                 value={pickerName}
                 onChange={(e) => {
@@ -187,8 +195,8 @@ export default function RecipeBuilderPage() {
                 }}
                 aria-label="Ingredient name"
               />
-              <datalist id="fruit-options">
-                {FRUITS.map((f) => (
+              <datalist id="food-options">
+                {FOODS.map((f) => (
                   <option key={f.common_name} value={f.common_name} />
                 ))}
               </datalist>
@@ -207,8 +215,8 @@ export default function RecipeBuilderPage() {
             </form>
             {pickerError && <p className="picker-error">{pickerError}</p>}
             <p className="picker-hint">
-              Only fruits are available right now — vegetables and other ingredients are coming
-              soon.
+              Fruits and vegetables are available. Spices, grains, pulses, dairy and oils aren&rsquo;t in
+              the datasets yet.
             </p>
 
             {draft.ingredients.length === 0 ? (
@@ -239,9 +247,11 @@ export default function RecipeBuilderPage() {
                         />
                       </td>
                       <td className="num">
-                        {row.values.energy_kcal == null
-                          ? "—"
-                          : `${Math.round(row.values.energy_kcal)} kcal`}
+                        {row.values.energy_kcal == null ? (
+                          <span className="dash">no data</span>
+                        ) : (
+                          `${Math.round(row.values.energy_kcal)} kcal`
+                        )}
                       </td>
                       <td>
                         <button
@@ -268,6 +278,8 @@ export default function RecipeBuilderPage() {
               </button>
             </div>
           </div>
+
+          <RecipeOverview rows={rows} servings={draft.servings} />
 
           <RecipeNutritionTable rows={rows} totals={totals} servings={draft.servings} />
         </div>

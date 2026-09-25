@@ -28,7 +28,10 @@ export default function RecipeNutritionTable({ rows, totals, servings }) {
             {rows.map((row) => (
               <tr key={row.id}>
                 <td>
-                  {row.fruitName} <span className="fruit-sci">{row.grams} g</span>
+                  {row.fruitName}{" "}
+                  <span className="fruit-sci">
+                    {row.grams} g{row.provisional ? " · provisional values" : ""}
+                  </span>
                 </td>
                 {NUTRIENT_FIELDS.map((f) => (
                   <td key={f.key} className="num">
